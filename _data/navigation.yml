@@ -8,19 +8,7 @@ docs:
   url: research.html
 
 - title: Publications
-  url: publications.html
-
-- title: Software
-  url: software.html
-  
-- title: Available Projects
-  url: available_projects.html
-  
-- title: Teaching
-  url: teaching.html
-  
-- title: Mentoring
-  url: mentoring.html
+  url: publications.html 
 
 - title: Contact
   url: contact.html
