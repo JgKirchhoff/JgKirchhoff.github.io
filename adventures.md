@@ -11,5 +11,36 @@ Now, I live in Austin, TX where I guide outdoor trips for a nonprofit called [Ex
 
 ## Pictures from playing outside
 
-Some of the photos shown here are from guiding trips: Most are from making the best of every weekend. I love talking about composites, inverse problems & research; I really love talking about the outdoors and your recent adventures! Reach out & share pictures you snapped along the trail. 
+Some photos shown here are from guiding trips: Although most are from making the best of every weekend. My passions extend from delving into composites, inverse problems, and research in general to hearing about how others have engaged the outdoors. Share your latest adventures! Don't hesitate to connect and share some the pics you've captured along the trail.
+
+<img src="images/adventures/img1.jpeg" />
+<img src="images/adventures/img2.jpeg" />
+<img src="images/adventures/img3.jpeg" />
+<img src="images/adventures/img4.jpeg" />
+<img src="images/adventures/img5.jpeg" />
+<img src="images/adventures/img6.jpeg" />
+<img src="images/adventures/img7.jpeg" />
+<img src="images/adventures/img8.jpeg" />
+<img src="images/adventures/img9.jpeg" />
+<img src="images/adventures/img10.jpeg" />
+<img src="images/adventures/img11.jpeg" />
+<img src="images/adventures/img12.jpeg" />
+<img src="images/adventures/img13.jpeg" />
+<img src="images/adventures/img14.jpeg" />
+<img src="images/adventures/img15.jpeg" />
+<img src="images/adventures/img16.jpeg" />
+<img src="images/adventures/img17.jpeg" />
+<img src="images/adventures/img18.jpeg" />
+<img src="images/adventures/img19.jpeg" />
+<img src="images/adventures/img20.jpeg" />
+<img src="images/adventures/img21.jpeg" />
+<img src="images/adventures/img22.jpeg" />
+<img src="images/adventures/img23.jpeg" />
+<img src="images/adventures/img24.jpeg" />
+<img src="images/adventures/img25.jpeg" />
+<img src="images/adventures/img26.jpeg" />
+<img src="images/adventures/img27.jpeg" />
+<img src="images/adventures/img28.jpeg" />
+<img src="images/adventures/img29.jpeg" />
+<img src="images/adventures/img30.jpeg" />
 
