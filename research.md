@@ -3,7 +3,7 @@ title: Research
 layout: default
 ---
 
-## Research highlights
+## Research Overview
 My research currently sits at the intersection of advanced composite processing and computational science, particularly focusing on inverse problems and outer-loop settings. Through the utilization of cutting-edge computational tools, my aim is threefold: first, to deepen our understanding of the fundamental science behind manufacturing methods; second, to develop real-time monitoring and certification techniques for performance; and third, to optimize the manufacturing process itself. My work is supported by a prestigious NASA NSTGRO fellowship entitled "Data-Driven Modeling and Optimization of Robotic In-situ Consolidation of Thermoplastic Composites," despite my current emphasis being more on model-driven methods rather than data-driven ones. However, I am eager to strike a balance between these two philosophies as my research progresses. Frankly, I love this interaction of the computational science motivating a deep understanding of the physics while the manufacturing settings drives a difficult computational challenge for on-line predictive tools. 
 
 ## Thermoplastic Composites (Fusion Bonding)
