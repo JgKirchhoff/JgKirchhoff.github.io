@@ -5,4 +5,6 @@ layout: default
 
 ## Research highlights
 
-To be updated soon. 
+## Thermoplastic Commposites (Fusion Bonding)
+
+## Inverse Problems & Digital Twins 
