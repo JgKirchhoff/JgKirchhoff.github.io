@@ -3,6 +3,16 @@ title: Home
 layout: default
 ---
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L495D4GJQ7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-L495D4GJQ7');
+</script>
+
 <div id="twosided">
 <div id="left" style="float: left; max-width: 30%;border: 10px"> 
     <img src="images/profile.jpg" />
