@@ -12,6 +12,7 @@ layout: default
 <p> <a href="https://utexas.edu" target="blank">The University of Texas at Austin</a></p>
 <p> <a href="https://www.me.utexas.edu/" target="blank">Walker Department of Mechanical Engineering</a><br></p>
 <p> <a href="https://oden.utexas.edu" target="blank">Oden Institute for Computational Engineering and Sciences</a><br></p>
+<p> <a href="files/IDIC.pdf">Infinite Dimensional IDIC Manuscript </a> </p>
 </div>
 </div>
 <div id="clearer" style="clear: both"> </div>
