@@ -17,7 +17,7 @@ Fusion bonding in thermoplastic composites is a key physics to understand in the
 
 Often, we cannot directly observe the parameter of interest with sensors. Instead, we can measure observations of the state (i.e, temperature, displacement, etc.,) and through an inverse problem we infer the parameter of interest. I am particuarly interested in inverse problems where the parameters exist in high-dimensions, ie., full-field measurements. This is particularly useful for manufacturing where we want to discover non-conformoties and the parameter spaces needs to be large enough to support this. Unfortunately, this problem is highly ill-posed so we introduce regularization so that we can use a Newton system to solve the problem. An example of this is an algorithm we developed to infer fully spatial modulus behavior of materials using Digital Image Correlation. Our contribution is here being able to characterize heterogenous materials, non-destructively discover voids/non-conformoties and find modulus induced stress fields. 
 
-<img src="images/overview_v2.pdf" />
+
 
 
 
