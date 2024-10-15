@@ -43,4 +43,9 @@ Some photos shown here are from guiding trips: Although most are from making the
 <img src="images/adventures/img28.jpeg" />
 <img src="images/adventures/img29.jpeg" />
 <img src="images/adventures/img30.jpeg" />
+<img src="images/adventures/img31.HEIC" />
+<img src="images/adventures/img32.HEIC" />
+<img src="images/adventures/img33.HEIC" />
+<img src="images/adventures/img34.HEIC" />
+<img src="images/adventures/img31.JPG" />
 
