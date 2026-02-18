@@ -1,160 +1,233 @@
 ---
 ---
 
-@charset "utf-8";
+/*
+ * This file controls what is imported from /_sass
+ *
+ * Note that the files are processed in the order they are imported, so they are partly
+   sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
+ */
 
-/* Import our granola variables FIRST (before the theme) */
-@import "granola-variables";
+@import
+    "granola-variables",
 
-/* Then import the theme — it will respect our overrides */
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
-@import "minimal-mistakes";
+    "vendor/breakpoint/breakpoint",
+
+    "themes",
+    "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
+    "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
+
+    "include/mixins",
+    "vendor/susy/susy",
+
+    "layout/reset",
+    "layout/base",
+
+    "include/utilities",
+    "layout/tables",
+    "layout/buttons",
+    "layout/notices",
+    "layout/masthead",
+    "layout/navigation",
+    "layout/footer",
+    "syntax",
+
+    "layout/forms",
+
+    "layout/page",
+    "layout/archive",
+    "layout/sidebar",
+    "layout/json_cv",
+
+    "vendor/font-awesome/fontawesome",
+    "vendor/font-awesome/solid",
+    "vendor/font-awesome/brands"
+;
 
 /* ============================================
-   🏕️ GRANOLA CSS OVERRIDES
-   (After theme so these take priority)
+   🏕️ GRANOLA CSS OVERRIDES — HIGH SPECIFICITY
+   (After all imports so these win)
    ============================================ */
 
 body {
-  background-color: $cream;
+  background-color: #F5F1EB !important;
 }
 
-/* --- Masthead / Top Nav --- */
+/* --- Site Title --- */
+.masthead .site-title,
+.masthead .site-title a,
+a.site-title {
+  font-family: 'Libre Baskerville', Georgia, serif !important;
+  color: #4A3728 !important;
+}
+
+/* --- Top Nav Bar --- */
 .masthead {
-  background-color: $cream;
-  border-bottom: 2px solid $warm-stone;
+  background-color: #F5F1EB !important;
+  border-bottom: 2px solid #B8A99A !important;
 }
 
 .greedy-nav {
-  background: $cream;
-
-  a {
-    color: $bark;
-    &:hover { color: $forest-green; }
-  }
-
-  .visible-links a:before {
-    background: $terracotta;
-  }
+  background: #F5F1EB !important;
 }
 
-.site__title, .site-title {
-  font-family: $serif;
-  color: $bark !important;
+.greedy-nav a,
+.greedy-nav .visible-links a {
+  color: #4A3728 !important;
+}
+
+.greedy-nav a:hover,
+.greedy-nav .visible-links a:hover {
+  color: #2D5016 !important;
+}
+
+.greedy-nav .visible-links a:before {
+  background: #C4713B !important;
 }
 
 /* --- Author Sidebar --- */
+.sidebar .author__name,
 .author__name {
-  font-family: $serif;
-  color: $bark;
+  font-family: 'Libre Baskerville', Georgia, serif !important;
+  color: #4A3728 !important;
 }
 
+.sidebar .author__bio,
 .author__bio {
-  color: $sage;
+  color: #7A8B69 !important;
   font-style: italic;
 }
 
-.author__urls-wrapper a {
-  color: $forest-green;
-  &:hover { color: $terracotta; }
+.author__urls-wrapper a,
+.author__urls a {
+  color: #2D5016 !important;
 }
 
-/* --- Page Content --- */
-.page__content {
-  h1, h2, h3, h4 {
-    font-family: $serif;
-    color: $bark;
-  }
+.author__urls-wrapper a:hover,
+.author__urls a:hover {
+  color: #C4713B !important;
+}
 
-  h2 {
-    color: $forest-green;
-    border-bottom: 1px solid $warm-stone;
-    padding-bottom: 0.3em;
-  }
+/* --- Page Title --- */
+.page__title,
+h1.page__title {
+  font-family: 'Libre Baskerville', Georgia, serif !important;
+  color: #4A3728 !important;
+}
 
-  a {
-    color: $forest-green;
-    text-decoration: none;
-    &:hover {
-      color: $terracotta;
-      text-decoration: underline;
-    }
-  }
+/* --- Headings --- */
+.page__content h1,
+.page__content h2,
+.page__content h3,
+.page__content h4 {
+  font-family: 'Libre Baskerville', Georgia, serif !important;
+  color: #4A3728 !important;
+}
 
-  blockquote {
-    border-left: 4px solid $terracotta;
-    background: darken($cream, 3%);
-    color: $bark;
-    font-style: italic;
-    padding: 0.8em 1.2em;
-    margin: 1.5em 0;
-    border-radius: 0 4px 4px 0;
-  }
+.page__content h2 {
+  color: #2D5016 !important;
+  border-bottom: 1px solid #B8A99A;
+  padding-bottom: 0.3em;
+}
 
-  code {
-    background: darken($cream, 5%);
-    border: 1px solid darken($cream, 10%);
-    border-radius: 3px;
-    color: $bark;
-  }
+/* --- Body Text --- */
+.page__content p,
+.page__content li {
+  color: #2E2E2E;
+}
+
+/* --- Links --- */
+.page__content a {
+  color: #2D5016 !important;
+  text-decoration: none;
+}
+
+.page__content a:hover {
+  color: #C4713B !important;
+  text-decoration: underline;
+}
+
+/* --- Blockquotes --- */
+.page__content blockquote {
+  border-left: 4px solid #C4713B !important;
+  background: #EDE8E0;
+  color: #4A3728 !important;
+  font-style: italic;
+  padding: 0.8em 1.2em;
+  margin: 1.5em 0;
+  border-radius: 0 4px 4px 0;
+}
+
+/* --- Inline Code --- */
+.page__content code {
+  background: #EAE5DC !important;
+  border: 1px solid #D9D2C7 !important;
+  border-radius: 3px;
+  color: #4A3728 !important;
 }
 
 /* --- Horizontal Rules --- */
 hr {
-  border: none;
+  border: none !important;
   height: 1px;
-  background: linear-gradient(to right, transparent, $warm-stone, transparent);
+  background: linear-gradient(to right, transparent, #B8A99A, transparent) !important;
   margin: 2em 0;
 }
 
 /* --- Footer --- */
 .page__footer {
-  background: $bark;
-  color: $warm-stone;
+  background: #4A3728 !important;
+  color: #B8A99A !important;
+}
 
-  a {
-    color: $sage;
-    &:hover { color: $cream; }
-  }
+.page__footer a {
+  color: #7A8B69 !important;
+}
 
-  footer { color: $warm-stone; }
+.page__footer a:hover {
+  color: #F5F1EB !important;
+}
+
+.page__footer footer {
+  color: #B8A99A !important;
 }
 
 /* --- Buttons --- */
 .btn--primary {
-  background-color: $forest-green;
-  color: $cream;
-  &:hover { background-color: $moss; }
+  background-color: #2D5016 !important;
+  color: #F5F1EB !important;
+}
+
+.btn--primary:hover {
+  background-color: #3E6435 !important;
 }
 
 /* --- Tables --- */
-table {
-  border-collapse: collapse;
-  width: 100%;
+table th {
+  background: #4A3728 !important;
+  color: #F5F1EB !important;
+  padding: 0.6em 1em;
+  font-family: 'Libre Baskerville', Georgia, serif;
+}
 
-  th {
-    background: $bark;
-    color: $cream;
-    padding: 0.6em 1em;
-    font-family: $serif;
-  }
+table td {
+  padding: 0.5em 1em;
+  border-bottom: 1px solid #D9D2C7;
+}
 
-  td {
-    padding: 0.5em 1em;
-    border-bottom: 1px solid darken($cream, 10%);
-  }
-
-  tr:hover td {
-    background: darken($cream, 3%);
-  }
+table tr:hover td {
+  background: #EDE8E0;
 }
 
 /* --- Tags --- */
 .page__taxonomy-item {
-  background: $sage;
-  color: $cream;
+  background: #7A8B69 !important;
+  color: #F5F1EB !important;
   border-radius: 12px;
   padding: 2px 10px;
   font-size: 0.78em;
-  &:hover { background: $forest-green; }
+}
+
+.page__taxonomy-item:hover {
+  background: #2D5016 !important;
 }
