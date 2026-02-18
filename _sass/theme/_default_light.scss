@@ -1,5 +1,5 @@
 /* ==========================================================================
-    DEFAULT THEME - LIGHT VERSION (GRANOLA)
+    DEFAULT THEME - LIGHT VERSION (GRANOLA ON WHITE)
     ========================================================================== */
 /* Color codes used for the theme */
 $primary-color              : #2D5016;
@@ -26,14 +26,14 @@ $navicon-height             : 4px;
 $sidebar-link-max-width     : 250px;
 $sidebar-screen-min-width   : 1024px;
 
-/* Granola light theme */
+/* Granola light theme on white */
 :root {
     --global-base-color                 : #2D5016;
-    --global-bg-color                   : #F5F1EB;
+    --global-bg-color                   : #ffffff;
     --global-footer-bg-color            : #4A3728;
-    --global-border-color               : #B8A99A;
+    --global-border-color               : #E0E0E0;
     --global-dark-border-color          : #B8A99A;
-    --global-code-background-color      : #EAE5DC;
+    --global-code-background-color      : #f5f5f5;
     --global-code-text-color            : #4A3728;
     --global-fig-caption-color          : #7A8B69;
     --global-link-color                 : #2D5016;
@@ -43,5 +43,5 @@ $sidebar-screen-min-width   : 1024px;
     --global-masthead-link-color-hover  : #2D5016;
     --global-text-color                 : #2E2E2E;
     --global-text-color-light           : #7A8B69;
-    --global-thead-color                : #EDE8E0;
+    --global-thead-color                : #f5f5f5;
 }
