@@ -5,11 +5,11 @@ main:
   - title: "Publications"
     url: /publications/
 
-  - title: "Software"
-    url: /software/
-
   - title: "Teaching"
     url: /teaching/
+
+  - title: "Adventures"
+    url: /adventures/
 
   - title: "CV"
     url: /cv/
