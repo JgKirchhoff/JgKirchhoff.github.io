@@ -4,8 +4,54 @@ title: "About"
 author_profile: true
 ---
 
-I am a Ph.D. student in the [Walker School of Mechanical Engineering](https://www.me.utexas.edu/) where I am co-advised by [Dr. Omar Ghattas](http://users.oden.utexas.edu/~omar) and [Dr. Mehran Tehrani](https://jacobsschool.ucsd.edu/people/profile/mehran-tehrani). Funded by a NASA NSTGRO fellowship, I am interested in developing industry 4.0 tools for composites manufacturing. Specifically, the technology I aim to enhance with computational tools is In-Situ Consolidation of Thermoplastic Composites (ICAT). ICAT has potential to be both a high-rate and sustainable approach for large scale manufacturing. I balance my time running experiments in a lab and programming computational methods. Some key areas of interest are: real-time bayesian inversion, uncertainty quantification, fiber composite, solid mechanics, and materials characterization.
+## Engineering the Future of Thermoplastic Composites
 
-I obtained my Bachelors in Aeronautics and Astronautics from [Purdue University](https://engineering.purdue.edu/AAE) in Spring 2022 with a specialization in Structures and Materials. Here, I studied under [Dr. Byron Pipes](https://engineering.purdue.edu/AAE/people/ptProfile?resource_id=1436) and [Dr. Eduardo Barocio](https://www.purdue.edu/cmsc/tech-area-bio/barocio.php). My research focused on thermoelastic warpage, additive manufacturing of continuous fiber composites, and characterization. I was awarded an [Astronaut Scholarship Foundation](https://astronautscholarship.org/) for these efforts.
+I am a Ph.D. candidate in Mechanical Engineering at the University of Texas at Austin, co-advised by Prof. Omar Ghattas and Prof. Mehran Tehrani. My research sits at the intersection of advanced manufacturing, solid mechanics, and computational science.
 
-Building experience in industry includes two internships with [The Boeing Company](https://www.boeing.com/), both in composites research & development roles. These roles provide perspective for my current research. Previously, I researched with [Dr. Cate Brinson](https://mems.duke.edu/faculty/catherine-brinson) through an NSF Research Experience for Undergraduates at Duke University. My first exposure to research - and composites - was at North Carolina State University with [Dr. Mark Pankow](https://www.mae.ncsu.edu/blast). Each experience provided a unique perspective on the world around us, helping me take steps towards where I am now.
+Funded by the NASA Space Technology Graduate Research Opportunities (NSTGRO) Fellowship, I develop digital twins and inverse methods for high-rate thermoplastic composite manufacturing.
+
+---
+
+## Research Focus
+
+My work centers on In-Situ Consolidation of Thermoplastic Composites (ICAT) — a high-rate, out-of-autoclave process with potential to dramatically improve manufacturing speed and sustainability.
+
+I combine:
+
+- Experimental characterization  
+  (SEM-DIC, DSC, AFM-IR, micro-CT, ultrasonic C-scan)
+
+- Bayesian inverse problems and uncertainty quantification  
+  (infinite-dimensional inversion, neural-operator surrogates)
+
+- Process–structure–property modeling  
+  (bonding science, interdiffusion, crystallinity heterogeneity)
+
+The goal is to enable real-time inference of material behavior and accelerate next-generation composite manufacturing.
+
+---
+
+## Technical Themes
+
+- Thermoplastic composite bonding and healing  
+- Heterogeneous material property inference  
+- Digital image correlation (IDIC)  
+- Neural operators for solid mechanics  
+- High-rate automated fiber placement (AFP)  
+- Sub-melt fusion bonding (OATMEAL)  
+
+---
+
+## Background
+
+I received my B.S. in Aeronautical and Astronautical Engineering from Purdue University, specializing in structures and materials. My early research focused on thermoelastic warpage and additive manufacturing of continuous fiber composites, and I was honored to be named an Astronaut Scholar.
+
+Beyond academia, I completed two R&D internships at Boeing in composite manufacturing and materials engineering. These experiences continue to shape my applied research perspective.
+
+---
+
+## Looking Forward
+
+I am passionate about building the computational and experimental infrastructure necessary to transition thermoplastic composites from laboratory demonstrations to scalable aerospace systems.
+
+If you are interested in collaboration — academic or industrial — I would be glad to connect.
