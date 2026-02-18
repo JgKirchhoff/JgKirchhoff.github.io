@@ -18,8 +18,8 @@
             </li>
           {% endfor %}
         </ul>
-        <button><span class="navicon"></span></button>
-        <ul class="hidden-links hidden">
+        <button id="nav-toggle" aria-label="Menu"><span class="navicon"></span></button>
+        <ul id="nav-hidden" class="hidden-links hidden">
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
@@ -35,3 +35,16 @@
     </div>
   </div>
 </div>
+
+<script>
+  document.getElementById('nav-toggle').addEventListener('click', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    document.getElementById('nav-hidden').classList.toggle('hidden');
+  });
+  document.addEventListener('click', function(e) {
+    if (!e.target.closest('.greedy-nav')) {
+      document.getElementById('nav-hidden').classList.add('hidden');
+    }
+  });
+</script>
