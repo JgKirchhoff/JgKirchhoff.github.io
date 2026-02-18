@@ -4,15 +4,14 @@
 locale:                  "en-US"
 title:                   "Joseph Kirchhoff"
 title_separator:         "|"
-subtitle:                "Composites × Computation"
 name:                    "Joseph Kirchhoff"
 description:             "PhD Student developing computational tools for thermoplastic composites manufacturing"
 url:                     "https://jgkirchhoff.github.io"
 baseurl:                 ""
 repository:              "JgKirchhoff/JgKirchhoff.github.io"
-teaser:                  # filename of fallback teaser image in /images/
 breadcrumbs:             false
 words_per_minute:        200
+read_time:               false
 atom_feed:
   path:                  # blank = default Atom feed
 
@@ -21,17 +20,47 @@ atom_feed:
 # =============================================================================
 author:
   name:             "Joseph Kirchhoff"
-  avatar:           "profile.jpg"
+  avatar:           "images/profile.jpg"
   bio:              "Composites × Computation. NASA NSTGRO Fellow @ UT Austin."
   location:         "Austin, TX"
   employer:         "The University of Texas at Austin"
-  uri:              
   email:            josephgkirchhoff@gmail.com
-  googlescholar:    https://scholar.google.com/citations?user=xi-inBMAAAAJ&hl=en
+  googlescholar:    "https://scholar.google.com/citations?user=xi-inBMAAAAJ&hl=en"
   github:           "JgKirchhoff"
-  linkedin:         joseph-kirchhoff
-  orcid:            "0009-0001-1245-4750"
+  linkedin:         "joseph-kirchhoff"
+  orcid:            "https://orcid.org/0009-0001-1245-4750"
 
+# =============================================================================
+# Site Settings - Theme
+# =============================================================================
+# Academic Pages is NOT minimal-mistakes remote theme
+# It includes its own _sass, _layouts, _includes
+# Do NOT use remote_theme here
+site_theme:              "default"
+
+# =============================================================================
+# Markdown / Build
+# =============================================================================
+markdown:                kramdown
+kramdown:
+  input:                 GFM
+  hard_wrap:             false
+  auto_ids:              true
+  footnote_nr:           1
+  entity_output:         as_char
+  toc_levels:            1..6
+  smart_quotes:          lsquo,rsquo,ldquo,rdquo
+  enable_coderay:        false
+
+# =============================================================================
+# Plugins
+# =============================================================================
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-redirect-from
 
 # =============================================================================
 # Reading Files
@@ -65,20 +94,6 @@ exclude:
   - tmp
 
 # =============================================================================
-# Build Settings
-# =============================================================================
-markdown:        kramdown
-remote_theme:    "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: "default"    # we override with our granola SCSS
-
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jekyll-include-cache
-
-# =============================================================================
 # HTML Compression
 # =============================================================================
 compress_html:
@@ -87,24 +102,44 @@ compress_html:
     envs: development
 
 # =============================================================================
+# Collections
+# =============================================================================
+collections:
+  teaching:
+    output: true
+    permalink: /:collection/:path/
+  publications:
+    output: true
+    permalink: /:collection/:path/
+  research:
+    output: true
+    permalink: /:collection/:path/
+  software:
+    output: true
+    permalink: /:collection/:path/
+
+# =============================================================================
 # Defaults
 # =============================================================================
 defaults:
   # _pages
   - scope:
       path: ""
-      type: pages
+      type: "pages"
     values:
-      layout: single
+      layout: "default"
       author_profile: true
-      read_time: false
-      comments: false
-      share: false
-      related: false
-  # _publications (if you use the collection later)
+  # _publications
   - scope:
       path: ""
-      type: publications
+      type: "publications"
     values:
-      layout: single
+      layout: "single"
+      author_profile: true
+  # _teaching
+  - scope:
+      path: ""
+      type: "teaching"
+    values:
+      layout: "single"
       author_profile: true
