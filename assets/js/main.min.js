@@ -65,6 +65,17 @@ $(document).ready(function () {
   // FitVids init
   fitvids();
 
+  // Greedy navigation — hamburger menu toggle
+  var $nav = $(".greedy-nav");
+  var $btn = $nav.find("button");
+  var $vLinks = $nav.find(".visible-links");
+  var $hLinks = $nav.find(".hidden-links");
+
+  $btn.on("click", function () {
+    $hLinks.toggleClass("hidden");
+    $(this).toggleClass("close");
+  });
+
   // Follow menu drop down
   $(".author__urls-wrapper button").on("click", function () {
     $(".author__urls").fadeToggle("fast", function () { });
