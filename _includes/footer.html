@@ -1,25 +1,21 @@
+cat > _includes/footer.html << 'EOF'
 {% include base_path %}
 
-{% if site.author.github or site.author.bitbucket or site.atom_feed.hide != true %}
 <div class="page__footer-follow">
   <ul class="social-icons">
-    {% if site.data.ui-text[site.locale].follow_label %}
-      <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
-    {% endif %}
-    {% if site.author.github %}
-      <li><a href="https://github.com/{{ site.author.github }}"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
-    {% endif %}
-    {% if site.author.bitbucket %}
-      <li><a href="https://bitbucket.org/{{ site.author.bitbucket }}"><i class="fab fa-bitbucket" aria-hidden="true"></i> Bitbucket</a></li>
-    {% endif %}
-    {% if site.atom_feed.hide != true %}
-    <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
-    {% endif %}
+    <li><strong>Joseph Kirchhoff</strong></li>
+    <li>UT Austin · Mechanical Engineering · Oden Institute</li>
+  </ul>
+  <ul class="social-icons" style="margin-top: 8px;">
+    <li><a href="mailto:josephgkirchhoff@gmail.com"><i class="fa fa-fw fa-envelope" aria-hidden="true"></i> Email</a></li>
+    <li><a href="https://scholar.google.com/citations?user=xi-inBMAAAAJ&hl=en"><i class="fa fa-fw fa-graduation-cap" aria-hidden="true"></i> Google Scholar</a></li>
+    <li><a href="https://github.com/JgKirchhoff"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    <li><a href="https://www.linkedin.com/in/joseph-kirchhoff"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+    <li><a href="https://orcid.org/0009-0001-1245-4750"><i class="fa fa-fw fa-id-badge" aria-hidden="true"></i> ORCID</a></li>
   </ul>
 </div>
-{% endif %}
 
-<div class="page__footer-copyright">
-  &copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}, {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br />
-  Site last updated {{ "now" | date: '%Y-%m-%d' }}
+<div class="page__footer-copyright" style="text-align: center; opacity: 0.6; font-size: 0.75em; margin-top: 10px;">
+  &copy; {{ site.time | date: '%Y' }} Joseph Kirchhoff
 </div>
+EOF

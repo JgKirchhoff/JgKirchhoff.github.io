@@ -2,9 +2,6 @@
 permalink: /adventures/
 title: "Adventures"
 author_profile: true
-header:
-  overlay_image: /images/background.jpg
-  overlay_filter: 0.3
 ---
 
 ## Outdoor Guiding
