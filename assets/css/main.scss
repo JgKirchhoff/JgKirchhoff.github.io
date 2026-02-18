@@ -318,3 +318,31 @@ table tr:hover td {
 .author__urls i {
   color: #7A8B69 !important;
 }
+
+
+/* --- Hide hamburger on desktop, fix mobile menu --- */
+.greedy-nav button {
+  display: none;
+}
+
+@media (max-width: 924px) {
+  .greedy-nav button {
+    display: block;
+    color: #4A3728 !important;
+    background: #F5F1EB !important;
+    border: none;
+    cursor: pointer;
+  }
+
+  .greedy-nav .hidden-links {
+    background: #F5F1EB !important;
+    border: 1px solid #B8A99A;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+    a {
+      color: #4A3728 !important;
+      &:hover { color: #2D5016 !important; }
+    }
+  }
+}
