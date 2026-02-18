@@ -1,0 +1,32 @@
+/* ============================================
+   🌲 GRANOLA / OUTDOORSY THEME VARIABLES
+   ============================================ */
+
+$forest-green:    #2D5016;
+$sage:            #7A8B69;
+$warm-stone:      #B8A99A;
+$cream:           #F5F1EB;
+$bark:            #4A3728;
+$terracotta:      #C4713B;
+$moss:            #3E6435;
+$sky-blue:        #6B98AA;
+
+/* Override Minimal Mistakes defaults */
+$primary-color:             $forest-green;
+$footer-background-color:   $bark;
+$link-color:                $forest-green;
+$link-color-hover:          $moss;
+$link-color-visited:        darken($sage, 10%);
+$masthead-link-color:       $bark;
+$masthead-link-color-hover: $forest-green;
+$text-color:                #2E2E2E;
+$muted-text-color:          $sage;
+$border-color:              darken($cream, 10%);
+$background-color:          $cream;
+$code-background-color:     darken($cream, 4%);
+
+$serif:              'Libre Baskerville', Georgia, Times, serif;
+$sans-serif:         'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+$monospace:          'Fira Code', Consolas, 'Courier New', monospace;
+$global-font-family: $sans-serif;
+$header-font-family: $serif;
