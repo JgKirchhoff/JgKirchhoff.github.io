@@ -4,54 +4,36 @@ title: "About"
 author_profile: true
 ---
 
-## Engineering the Future of Thermoplastic Composites
+I'm a Ph.D. student in the [Walker Department of Mechanical Engineering](https://www.me.utexas.edu/) at UT Austin, co-advised by [Prof. Omar Ghattas](http://users.oden.utexas.edu/~omar) and [Prof. Mehran Tehrani](https://jacobsschool.ucsd.edu/people/profile/mehran-tehrani), and affiliated with the [Oden Institute for Computational Engineering and Sciences](https://oden.utexas.edu). My work is supported by a [NASA NSTGRO Fellowship](https://www.nasa.gov/directorates/stmd/space-tech-research-grants/nstgro/).
 
-I am a Ph.D. candidate in Mechanical Engineering at the University of Texas at Austin, co-advised by Prof. Omar Ghattas and Prof. Mehran Tehrani. My research sits at the intersection of advanced manufacturing, solid mechanics, and computational science.
-
-Funded by the NASA Space Technology Graduate Research Opportunities (NSTGRO) Fellowship, I develop digital twins and inverse methods for high-rate thermoplastic composite manufacturing.
+I split my time between running experiments in a composites processing lab and developing computational methods at a keyboard — and I love that duality. The physics motivates difficult computational challenges, and the computation reveals things we'd never see in the lab alone.
 
 ---
 
-## Research Focus
+## What I Work On
 
-My work centers on In-Situ Consolidation of Thermoplastic Composites (ICAT) — a high-rate, out-of-autoclave process with potential to dramatically improve manufacturing speed and sustainability.
+My research centers on **In-Situ Consolidation of Thermoplastic Composites (ICAT)** — a high-rate, out-of-autoclave manufacturing process with the potential to dramatically improve both speed and sustainability of large-scale composite production. I'm building the computational and experimental tools to make this technology reliable and certifiable.
 
-I combine:
+This means working across three areas:
 
-- Experimental characterization  
-  (SEM-DIC, DSC, AFM-IR, micro-CT, ultrasonic C-scan)
+**Bonding Science** — Understanding how thermoplastic laminae fuse together during processing: intimate contact formation, polymer interdiffusion, and crystallization. My first paper investigates resin percolation during intimate contact, which drives the resin-rich interfaces commonly seen in automated fiber placement.
 
-- Bayesian inverse problems and uncertainty quantification  
-  (infinite-dimensional inversion, neural-operator surrogates)
+**Inverse Problems & Digital Twins** — Developing algorithms that infer full-field material properties from indirect measurements. We can't always see what we need to measure, so we observe displacement or temperature fields and solve an inverse problem to recover spatially-varying modulus, detect voids, and identify non-conformities. Our infinite-dimensional IDIC framework does exactly this.
 
-- Process–structure–property modeling  
-  (bonding science, interdiffusion, crystallinity heterogeneity)
-
-The goal is to enable real-time inference of material behavior and accelerate next-generation composite manufacturing.
-
----
-
-## Technical Themes
-
-- Thermoplastic composite bonding and healing  
-- Heterogeneous material property inference  
-- Digital image correlation (IDIC)  
-- Neural operators for solid mechanics  
-- High-rate automated fiber placement (AFP)  
-- Sub-melt fusion bonding (OATMEAL)  
+**Experimental Characterization** — SEM-DIC, DSC, AFM-IR, micro-CT, ultrasonic C-scan — I believe the best computational models come from researchers who also get their hands dirty in the lab.
 
 ---
 
 ## Background
 
-I received my B.S. in Aeronautical and Astronautical Engineering from Purdue University, specializing in structures and materials. My early research focused on thermoelastic warpage and additive manufacturing of continuous fiber composites, and I was honored to be named an Astronaut Scholar.
+I received my B.S. in Aeronautics and Astronautics from [Purdue University](https://engineering.purdue.edu/AAE) in 2022, where I worked with [Prof. Byron Pipes](https://engineering.purdue.edu/AAE/people/ptProfile?resource_id=1436) and [Prof. Eduardo Barocio](https://www.purdue.edu/cmsc/tech-area-bio/barocio.php) on thermoelastic warpage and additive manufacturing of continuous fiber composites. I was named an [Astronaut Scholar](https://astronautscholarship.org/) for this work.
 
-Beyond academia, I completed two R&D internships at Boeing in composite manufacturing and materials engineering. These experiences continue to shape my applied research perspective.
+I've completed two R&D internships at [Boeing](https://www.boeing.com/) in composite manufacturing, and earlier research stints with [Prof. Cate Brinson](https://mems.duke.edu/faculty/catherine-brinson) at Duke (NSF REU) and [Prof. Mark Pankow](https://www.mae.ncsu.edu/blast) at NC State — where I first discovered composites. Each stop gave me a different lens on how materials, manufacturing, and computation come together.
 
 ---
 
-## Looking Forward
+## Beyond the Lab
 
-I am passionate about building the computational and experimental infrastructure necessary to transition thermoplastic composites from laboratory demonstrations to scalable aerospace systems.
+When I'm not in the lab or writing code, I'm probably outside. I guide trips for [Explore Austin](https://exploreaustin.org/), a nonprofit that gets kids outdoors through mountain biking, canoeing, and wilderness skills. I earned my Wilderness First Responder (WFR) after guiding 21-day backpacking trips across Hawaii the summer after graduating from Purdue. It's a reminder that the best learning — in research and in life — happens when you're a little outside your comfort zone.
 
-If you are interested in collaboration — academic or industrial — I would be glad to connect.
+Check out the [Adventures](/adventures/) page for photos from the trail.
