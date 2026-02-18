@@ -6,15 +6,19 @@ author_profile: true
 
 ## Outdoor Guiding
 
-Outdoor education is a side-passion of mine. It began the summer after finishing undergraduate at Purdue where I guided 21-day overnight trips across the Hawaiian islands through Wilderness Adventures. Here, I discovered a passion for teaching new skills and life-long hobbies while cultivating a love for the outdoors. As a part of this, I earned my Wilderness First Responder (WFR) to make sure I am leading with safety in mind.
+Outdoor education is a meaningful part of my life outside of research. I am deeply motivated by teaching, mentorship, and helping others build confidence through shared challenge — values that shape both my academic and outdoor work.
 
-Now, I live in Austin, TX where I guide outdoor trips for a nonprofit called [Explore Austin](https://exploreaustin.org/). My favorite activities to guide are mountain biking, canoeing, and general outdoor medicine/skills. It is incredibly rewarding to give back to the community & get to play outside on weekends with a world-changing organization. During the summers, we guide week-long overnight trips where the kids put the skills they learned during the year to the test. The 2024 summer we went on a week-long canoe trip together!
+My guiding journey began the summer after finishing undergraduate at Purdue, when I led 21-day backpacking trips across the Hawaiian Islands with Wilderness Adventures. 
+ I now live in Austin, TX, where I volunteer with [Explore Austin](https://exploreaustin.org/), a nonprofit dedicated to long-term youth mentorship through outdoor adventure. I primarily facilitate mountain biking, canoeing, and outdoor skills/medicine programming. During the academic year, students build foundational skills; each summer culminates in a week-long expedition where they apply what they’ve learned. In 2024, we completed a week-long canoe expedition together — a highlight of the year.
 
 ---
 
-## Pictures from playing outside
+## Life Outside the Lab
 
-Some photos shown here are from guiding trips. Although most are from making the best of every weekend. My passions extend from delving into composites, inverse problems, and research in general to hearing about how others have engaged the outdoors. Share your latest adventures! Don't hesitate to connect and share some the pics you've captured along the trail.
+Many of the photos below are from trips I’ve helped lead; others are from weekend adventures with friends. My curiosity extends from thermoplastic composites and inverse problems to landscapes, rivers, and long trail conversations.
+
+If you enjoy the outdoors as well, I would genuinely love to hear about your latest adventure.
+
 
 <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 1em;">
   <img src="/images/adventures/img1.jpeg" style="width:100%; border-radius:4px;">
