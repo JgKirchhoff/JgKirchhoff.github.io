@@ -80,6 +80,12 @@ body::before {
   background-color: #4A3728;
 }
 
+@media (max-width: 600px) {
+  body::before {
+    height: 120px;
+  }
+}
+
 /* --- Site Title --- */
 .masthead .site-title,
 .masthead .site-title a,
@@ -320,9 +326,27 @@ table tr:hover td {
 }
 
 
-/* --- Hide hamburger on desktop, fix mobile menu --- */
+/* --- Hamburger & Mobile Navigation --- */
 .greedy-nav button {
-  display: none;
+  color: #4A3728 !important;
+  background: transparent !important;
+  border: none;
+  cursor: pointer;
+}
+
+.greedy-nav .hidden-links {
+  background: #F5F1EB !important;
+  border: 1px solid #B8A99A;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.greedy-nav .hidden-links a {
+  color: #4A3728 !important;
+}
+
+.greedy-nav .hidden-links a:hover {
+  color: #2D5016 !important;
 }
 
 @media (max-width: 924px) {
@@ -344,5 +368,21 @@ table tr:hover td {
       color: #4A3728 !important;
       &:hover { color: #2D5016 !important; }
     }
+  }
+}
+
+/* --- Mobile fixes --- */
+@media (max-width: 924px) {
+  .page {
+    padding-bottom: 2em;
+  }
+
+  .page__footer {
+    position: relative !important;
+  }
+
+  body {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
   }
 }
