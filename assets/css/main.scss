@@ -146,17 +146,13 @@ a.site-title {
 }
 
 /* --- Desktop: hide hamburger, fix masthead z-index --- */
+/* --- Desktop: hide hamburger completely --- */
 @media (min-width: 925px) {
-  .greedy-nav button {
+  #nav-toggle {
     display: none !important;
-    visibility: hidden !important;
-    width: 0 !important;
-    height: 0 !important;
-    overflow: hidden !important;
-    position: absolute !important;
   }
 
-  .greedy-nav .hidden-links {
+  #nav-hidden {
     display: none !important;
   }
 }
@@ -167,7 +163,7 @@ a.site-title {
     display: none !important;
   }
 
-  .greedy-nav button {
+  #nav-toggle {
     display: block !important;
     position: absolute;
     right: 1em;
