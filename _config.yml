@@ -23,10 +23,7 @@ author:
   avatar           : "profile.jpg"
   name             : "Joseph Kirchhoff"
   pronouns         :
-  bio              : "Composites × Computation \\ NASA NSTGRO Fellow @ UT Austin."
-  location         : "Austin, TX"
-  employer         : "The University of Texas at Austin"
-  uri              :
+  bio              : "Composites × Computation<br>NASA NSTGRO Fellow @ UT Austin"
   email            : "josephgkirchhoff@gmail.com"
 
   # Academic websites
