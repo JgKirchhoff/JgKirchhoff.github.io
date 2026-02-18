@@ -3,9 +3,6 @@
 
 /*
  * This file controls what is imported from /_sass
- *
- * Note that the files are processed in the order they are imported, so they are partly
-   sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
  */
 
 @import
@@ -50,6 +47,12 @@
 
 body {
   background-color: #F5F1EB !important;
+}
+
+/* --- Mountain Hero Banner --- */
+.page__hero--overlay,
+.masthead__hero {
+  background-color: #4A3728;
 }
 
 /* --- Site Title --- */
@@ -211,21 +214,30 @@ hr {
   background-color: #3E6435 !important;
 }
 
-/* --- Tables --- */
+/* --- Tables (light style - no dark backgrounds) --- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
 table th {
-  background: #4A3728 !important;
-  color: #F5F1EB !important;
+  background: #EDE8E0 !important;
+  color: #4A3728 !important;
   padding: 0.6em 1em;
   font-family: 'Libre Baskerville', Georgia, serif;
+  font-weight: 700;
+  border-bottom: 2px solid #B8A99A !important;
 }
 
 table td {
   padding: 0.5em 1em;
   border-bottom: 1px solid #D9D2C7;
+  color: #2E2E2E !important;
+  background: transparent !important;
 }
 
 table tr:hover td {
-  background: #EDE8E0;
+  background: #EDE8E0 !important;
 }
 
 /* --- Tags --- */
@@ -239,4 +251,32 @@ table tr:hover td {
 
 .page__taxonomy-item:hover {
   background: #2D5016 !important;
+}
+
+/* --- Notices / Boxes (fix dark background readability) --- */
+.notice,
+.notice--primary,
+.notice--info,
+.notice--warning,
+.notice--success,
+.notice--danger {
+  background-color: #EDE8E0 !important;
+  color: #2E2E2E !important;
+  border-left: 4px solid #B8A99A;
+}
+
+/* --- Archive items --- */
+.archive__item-title a {
+  color: #4A3728 !important;
+}
+
+.archive__item-title a:hover {
+  color: #2D5016 !important;
+}
+
+/* --- Sidebar social icons --- */
+.author__urls .svg-inline--fa,
+.author__urls .fa,
+.author__urls i {
+  color: #7A8B69 !important;
 }
