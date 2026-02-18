@@ -66,14 +66,18 @@ $(document).ready(function () {
   fitvids();
 
   // Greedy navigation — hamburger menu toggle
-  var $nav = $(".greedy-nav");
-  var $btn = $nav.find("button");
-  var $vLinks = $nav.find(".visible-links");
-  var $hLinks = $nav.find(".hidden-links");
+  $(".greedy-nav button").on("click", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    var $hidden = $(this).siblings(".hidden-links");
+    $hidden.toggleClass("hidden");
+  });
 
-  $btn.on("click", function () {
-    $hLinks.toggleClass("hidden");
-    $(this).toggleClass("close");
+  // Close menu when clicking outside
+  $(document).on("click", function (e) {
+    if (!$(e.target).closest(".greedy-nav").length) {
+      $(".greedy-nav .hidden-links").addClass("hidden");
+    }
   });
 
   // Follow menu drop down

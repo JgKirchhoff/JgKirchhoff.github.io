@@ -65,6 +65,8 @@ body::before {
   background-color: #F5F1EB !important;
   border-bottom: 2px solid #B8A99A !important;
   margin-bottom: 0 !important;
+  position: relative;
+  z-index: 50;
 }
 
 .masthead__inner-wrap,
@@ -143,10 +145,15 @@ a.site-title {
   background: #EDE8E0;
 }
 
-/* --- Desktop: hide hamburger --- */
+/* --- Desktop: hide hamburger, fix masthead z-index --- */
 @media (min-width: 925px) {
   .greedy-nav button {
     display: none !important;
+    visibility: hidden !important;
+    width: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
+    position: absolute !important;
   }
 
   .greedy-nav .hidden-links {
