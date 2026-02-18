@@ -179,6 +179,21 @@ a.site-title {
 
   #mountain-banner {
     height: 120px;
+    margin-top: 50px;
+  }
+
+  .author__urls-wrapper button {
+    display: none !important;
+  }
+
+  .author__urls {
+    display: block !important;
+    position: relative !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
   }
 
   .page {
