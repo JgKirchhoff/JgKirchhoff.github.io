@@ -20,7 +20,7 @@ repository               : "JgKirchhoff/JgKirchhoff.github.io"
 # Site Author - The following control what appear as part of the author content on the side bar.
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "/images/profile.jpg"
   name             : "Joseph Kirchhoff"
   pronouns         :
   bio              : "Composites × Computation. NASA NSTGRO Fellow @ UT Austin."

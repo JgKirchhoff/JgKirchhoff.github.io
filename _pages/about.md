@@ -2,10 +2,11 @@
 permalink: /
 title: "About"
 author_profile: true
-header:
-  overlay_image: /images/background.jpg
-  overlay_filter: 0.3
 ---
+
+<div style="width:100%; max-height:300px; overflow:hidden; margin: -20px 0 30px 0; border-radius: 4px;">
+  <img src="/images/background.jpg" style="width:100%; object-fit:cover; object-position: center 40%;">
+</div>
 
 I am a Ph.D. student in the [Walker School of Mechanical Engineering](https://www.me.utexas.edu/) where I am co-advised by [Dr. Omar Ghattas](http://users.oden.utexas.edu/~omar) and [Dr. Mehran Tehrani](https://jacobsschool.ucsd.edu/people/profile/mehran-tehrani). Funded by a NASA NSTGRO fellowship, I am interested in developing industry 4.0 tools for composites manufacturing. Specifically, the technology I aim to enhance with computational tools is In-Situ Consolidation of Thermoplastic Composites (ICAT). ICAT has potential to be both a high-rate and sustainable approach for large scale manufacturing. I balance my time running experiments in a lab and programming computational methods. Some key areas of interest are: real-time bayesian inversion, uncertainty quantification, fiber composite, solid mechanics, and materials characterization.
 
