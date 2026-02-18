@@ -45,8 +45,7 @@
 ;
 
 /* ============================================
-   🏕️ GRANOLA CSS OVERRIDES — HIGH SPECIFICITY
-   (After all imports so these win)
+   🏕️ GRANOLA CSS OVERRIDES
    ============================================ */
 
 body {
@@ -85,14 +84,9 @@ a.site-title {
   background: #C4713B !important;
 }
 
-/* --- Fix navigation display --- */
 .greedy-nav .links-menu,
 .greedy-nav .hidden-links {
   background: #F5F1EB !important;
-}
-
-.greedy-nav .visible-links {
-  display: flex !important;
 }
 
 .greedy-nav button {

@@ -1,109 +1,212 @@
-# =============================================================================
-# Site Settings
-# =============================================================================
-locale:                  "en-US"
-title:                   "Joseph Kirchhoff"
-title_separator:         "|"
-name:                    "Joseph Kirchhoff"
-description:             "PhD Student developing computational tools for thermoplastic composites manufacturing"
-url:                     "https://jgkirchhoff.github.io"
-baseurl:                 ""
-repository:              "JgKirchhoff/JgKirchhoff.github.io"
-breadcrumbs:             false
-words_per_minute:        200
-read_time:               false
-atom_feed:
-  path:                  # blank = default Atom feed
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your entire site, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# `jekyll serve -l -H localhost`. If you change this file, please restart the
+# server process.
 
-# =============================================================================
-# Site Author (shows in left sidebar)
-# =============================================================================
+# Basic Site Settings
+locale                   : "en-US"
+site_theme               : "default"
+title                    : "Joseph Kirchhoff"
+title_separator          : "|"
+name                     : &name "Joseph Kirchhoff"
+description              : &description "PhD Student developing computational tools for thermoplastic composites manufacturing"
+url                      : https://jgkirchhoff.github.io
+baseurl                  : ""
+repository               : "JgKirchhoff/JgKirchhoff.github.io"
+
+# Site Author - The following control what appear as part of the author content on the side bar.
 author:
-  name:             "Joseph Kirchhoff"
-  avatar:           "images/profile.jpg"
-  bio:              "Composites × Computation. NASA NSTGRO Fellow @ UT Austin."
-  location:         "Austin, TX"
-  employer:         "The University of Texas at Austin"
-  email:            josephgkirchhoff@gmail.com
-  googlescholar:    "https://scholar.google.com/citations?user=xi-inBMAAAAJ&hl=en"
-  github:           "JgKirchhoff"
-  linkedin:         "joseph-kirchhoff"
-  orcid:            "https://orcid.org/0009-0001-1245-4750"
+  # Biographic information
+  avatar           : "profile.png"
+  name             : "Joseph Kirchhoff"
+  pronouns         :
+  bio              : "Composites × Computation. NASA NSTGRO Fellow @ UT Austin."
+  location         : "Austin, TX"
+  employer         : "The University of Texas at Austin"
+  uri              :
+  email            : "josephgkirchhoff@gmail.com"
 
-# =============================================================================
-# Site Settings - Theme
-# =============================================================================
-# Academic Pages is NOT minimal-mistakes remote theme
-# It includes its own _sass, _layouts, _includes
-# Do NOT use remote_theme here
-site_theme:              "default"
+  # Academic websites
+  academia         :
+  arxiv            :
+  googlescholar    : "https://scholar.google.com/citations?user=xi-inBMAAAAJ&hl=en"
+  inspire-hep      :
+  impactstory      :
+  orcid            : "https://orcid.org/0009-0001-1245-4750"
+  semantic         :
+  ssrn             :
+  pubmed           :
+  researchgate     :
+  scopus           :
+  zotero           :
 
-# =============================================================================
-# Markdown / Build
-# =============================================================================
-markdown:                kramdown
-kramdown:
-  input:                 GFM
-  hard_wrap:             false
-  auto_ids:              true
-  footnote_nr:           1
-  entity_output:         as_char
-  toc_levels:            1..6
-  smart_quotes:          lsquo,rsquo,ldquo,rdquo
-  enable_coderay:        false
+  # Repositories and software development
+  bitbucket        :
+  codepen          :
+  dribbble         :
+  github           : "JgKirchhoff"
+  kaggle           :
+  stackoverflow    :
 
-# =============================================================================
-# Plugins
-# =============================================================================
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jekyll-redirect-from
+  # Social media
+  artstation       :
+  bluesky          :
+  facebook         :
+  flickr           :
+  foursquare       :
+  goodreads        :
+  google_plus      :
+  keybase          :
+  instagram        :
+  lastfm           :
+  linkedin         : "joseph-kirchhoff"
+  mastodon         :
+  medium           :
+  pinterest        :
+  soundcloud       :
+  steam            :
+  telegram         :
+  tumblr           :
+  twitter          :
+  vine             :
+  weibo            :
+  wikipedia        :
+  xing             :
+  youtube          :
+  zhihu            :
 
-# =============================================================================
+# Publication Category
+publication_category:
+  books:
+    title: 'Books'
+  manuscripts:
+    title: 'Journal Articles'
+  conferences:
+    title: 'Conference Papers'
+
+# Site Settings
+teaser                   :
+breadcrumbs              : false
+words_per_minute         : 160
+future                   : true
+read_more                : "disabled"
+talkmap_link             : false
+comments:
+  provider               : false
+  disqus:
+    shortname            :
+  discourse:
+    server               :
+  facebook:
+    appid                :
+    num_posts            :
+    colorscheme          :
+staticman:
+  allowedFields          : ['name', 'email', 'url', 'message']
+  branch                 : "gh-pages"
+  commitMessage          : "New comment."
+  filename               : comment-{@timestamp}
+  format                 : "yml"
+  moderation             : true
+  path                   : "_data/comments/{options.slug}"
+  requiredFields         : ['name', 'email', 'message']
+  transforms:
+    email                : "md5"
+  generatedFields:
+    date:
+      type               : "date"
+      options:
+        format           : "iso8601"
+atom_feed:
+  hide                   : false
+  path                   :
+
+# SEO Related
+google_site_verification :
+bing_site_verification   :
+alexa_site_verification  :
+yandex_site_verification :
+
+# Social Sharing
+twitter:
+  username               : &twitter
+facebook:
+  username               :
+  app_id                 :
+  publisher              :
+og_image                 :
+og_description           :
+social:
+  type                   :
+  name                   :
+  links:
+
+# Analytics
+analytics:
+  provider               : "false"
+  google:
+    tracking_id          :
+
 # Reading Files
-# =============================================================================
 include:
   - .htaccess
   - _pages
+  - files
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
-  - vendor
   - .asset-cache
   - .bundle
+  - .github
   - .jekyll-assets-cache
   - .sass-cache
-  - assets/js/plugins
   - assets/js/_main.js
+  - assets/js/plugins
   - assets/js/vendor
-  - Capfile
   - CHANGELOG
+  - Capfile
   - config
+  - Dockerfile
   - Gemfile
   - Gruntfile.js
   - gulpfile.js
   - LICENSE
+  - local
   - log
   - node_modules
-  - package.json
+  - package.json*
   - Rakefile
   - README
   - tmp
+  - vendor
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
-# =============================================================================
-# HTML Compression
-# =============================================================================
-compress_html:
-  clippings: all
-  ignore:
-    envs: development
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
 
-# =============================================================================
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
 # Collections
-# =============================================================================
 collections:
   teaching:
     output: true
@@ -111,35 +214,106 @@ collections:
   publications:
     output: true
     permalink: /:collection/:path/
-  research:
+  portfolio:
     output: true
     permalink: /:collection/:path/
-  software:
+  talks:
     output: true
     permalink: /:collection/:path/
 
-# =============================================================================
 # Defaults
-# =============================================================================
 defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
   # _pages
   - scope:
       path: ""
-      type: "pages"
+      type: pages
     values:
-      layout: "default"
-      author_profile: true
-  # _publications
-  - scope:
-      path: ""
-      type: "publications"
-    values:
-      layout: "single"
+      layout: single
       author_profile: true
   # _teaching
   - scope:
       path: ""
-      type: "teaching"
+      type: teaching
     values:
-      layout: "single"
+      layout: single
       author_profile: true
+      share: true
+      comments: true
+  # _publications
+  - scope:
+      path: ""
+      type: publications
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+  # _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comment: true
+  # _talks
+  - scope:
+      path: ""
+      type: talks
+    values:
+      layout: talk
+      author_profile: true
+      share: true
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Outputting
+permalink: /:categories/:title/
+timezone: Etc/UTC
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - jemoji
+
+# Mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - jemoji
+
+# Archives
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+
+# HTML Compression
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
