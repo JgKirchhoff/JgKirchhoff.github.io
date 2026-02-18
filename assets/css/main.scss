@@ -50,27 +50,7 @@ html {
   background-color: #F5F1EB !important;
 }
 
-/* Force cream on everything above the content */
-#masthead,
-.masthead,
-.masthead *,
-nav,
-nav *,
-.greedy-nav,
-.greedy-nav *,
-.masthead__inner-wrap,
-.masthead__inner-wrap *,
-.masthead__menu,
-.masthead__menu * {
-  background-color: #F5F1EB !important;
-  background: #F5F1EB !important;
-}
-
-/* --- Mountain Banner (below nav, above content) --- */
-.masthead {
-  margin-bottom: 0 !important;
-}
-
+/* --- Mountain Banner --- */
 body::before {
   content: "";
   display: block;
@@ -80,10 +60,18 @@ body::before {
   background-color: #4A3728;
 }
 
-@media (max-width: 600px) {
-  body::before {
-    height: 120px;
-  }
+/* --- Top Nav Bar --- */
+.masthead {
+  background-color: #F5F1EB !important;
+  border-bottom: 2px solid #B8A99A !important;
+  margin-bottom: 0 !important;
+}
+
+.masthead__inner-wrap,
+.masthead__menu,
+.initial-content,
+.search-content {
+  background-color: #F5F1EB !important;
 }
 
 /* --- Site Title --- */
@@ -94,25 +82,7 @@ a.site-title {
   color: #4A3728 !important;
 }
 
-/* --- Top Nav Bar --- */
-.masthead {
-  background-color: #F5F1EB !important;
-  border-bottom: 2px solid #B8A99A !important;
-}
-
-.masthead__inner-wrap {
-  background-color: #F5F1EB !important;
-}
-
-.initial-content,
-.search-content {
-  background-color: #F5F1EB !important;
-}
-
-nav.greedy-nav {
-  background-color: #F5F1EB !important;
-}
-
+/* --- Nav Links --- */
 .greedy-nav {
   background: #F5F1EB !important;
 }
@@ -131,13 +101,96 @@ nav.greedy-nav {
   background: #C4713B !important;
 }
 
-.greedy-nav .links-menu,
-.greedy-nav .hidden-links {
-  background: #F5F1EB !important;
-}
-
+/* --- Hamburger Button (all screens) --- */
 .greedy-nav button {
   color: #4A3728 !important;
+  background: transparent !important;
+  border: none;
+  cursor: pointer;
+}
+
+/* --- Dropdown Menu --- */
+.greedy-nav .hidden-links {
+  background: #F5F1EB !important;
+  border: 1px solid #B8A99A;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  padding: 0.5em 0;
+  z-index: 100;
+  min-width: 200px;
+}
+
+.greedy-nav .hidden-links.hidden {
+  display: none !important;
+}
+
+.greedy-nav .hidden-links:not(.hidden) {
+  display: block !important;
+}
+
+.greedy-nav .hidden-links li {
+  display: block !important;
+}
+
+.greedy-nav .hidden-links a {
+  display: block;
+  padding: 0.5em 1.5em;
+  color: #4A3728 !important;
+}
+
+.greedy-nav .hidden-links a:hover {
+  color: #2D5016 !important;
+  background: #EDE8E0;
+}
+
+/* --- Desktop: hide hamburger --- */
+@media (min-width: 925px) {
+  .greedy-nav button {
+    display: none !important;
+  }
+
+  .greedy-nav .hidden-links {
+    display: none !important;
+  }
+}
+
+/* --- Mobile: show hamburger, hide nav links --- */
+@media (max-width: 924px) {
+  .greedy-nav .visible-links li:not(.persist) {
+    display: none !important;
+  }
+
+  .greedy-nav button {
+    display: block !important;
+    position: absolute;
+    right: 1em;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+
+  .greedy-nav .hidden-links {
+    position: absolute;
+    right: 0;
+    top: 100%;
+  }
+
+  body::before {
+    height: 120px;
+  }
+
+  .page {
+    padding-bottom: 2em;
+  }
+
+  .page__footer {
+    position: relative !important;
+  }
+
+  body {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
 }
 
 /* --- Author Sidebar --- */
@@ -323,66 +376,4 @@ table tr:hover td {
 .author__urls .fa,
 .author__urls i {
   color: #7A8B69 !important;
-}
-
-
-/* --- Hamburger & Mobile Navigation --- */
-.greedy-nav button {
-  color: #4A3728 !important;
-  background: transparent !important;
-  border: none;
-  cursor: pointer;
-}
-
-.greedy-nav .hidden-links {
-  background: #F5F1EB !important;
-  border: 1px solid #B8A99A;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.greedy-nav .hidden-links a {
-  color: #4A3728 !important;
-}
-
-.greedy-nav .hidden-links a:hover {
-  color: #2D5016 !important;
-}
-
-@media (max-width: 924px) {
-  .greedy-nav button {
-    display: block;
-    color: #4A3728 !important;
-    background: #F5F1EB !important;
-    border: none;
-    cursor: pointer;
-  }
-
-  .greedy-nav .hidden-links {
-    background: #F5F1EB !important;
-    border: 1px solid #B8A99A;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-
-    a {
-      color: #4A3728 !important;
-      &:hover { color: #2D5016 !important; }
-    }
-  }
-}
-
-/* --- Mobile fixes --- */
-@media (max-width: 924px) {
-  .page {
-    padding-bottom: 2em;
-  }
-
-  .page__footer {
-    position: relative !important;
-  }
-
-  body {
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
-  }
 }
