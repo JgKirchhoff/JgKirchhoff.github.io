@@ -1,15 +1,12 @@
 main:
-  - title: "Research"
-    url: /research/
+  - title: "Composites"
+    url: /composites/
 
-  - title: "Publications"
-    url: /publications/
-
-  - title: "Teaching"
-    url: /teaching/
+  - title: "Inverse Problems"
+    url: /inverse-problems/
 
   - title: "Adventures"
     url: /adventures/
 
-  - title: "CV"
-    url: /cv/
+  - title: "Publications"
+    url: /publications/

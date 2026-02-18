@@ -45,8 +45,25 @@
    🏕️ GRANOLA CSS OVERRIDES
    ============================================ */
 
-body {
+body,
+html {
   background-color: #F5F1EB !important;
+}
+
+/* Force cream on everything above the content */
+#masthead,
+.masthead,
+.masthead *,
+nav,
+nav *,
+.greedy-nav,
+.greedy-nav *,
+.masthead__inner-wrap,
+.masthead__inner-wrap *,
+.masthead__menu,
+.masthead__menu * {
+  background-color: #F5F1EB !important;
+  background: #F5F1EB !important;
 }
 
 /* --- Mountain Banner (below nav, above content) --- */
