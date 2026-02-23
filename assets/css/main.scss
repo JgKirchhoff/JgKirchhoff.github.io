@@ -239,9 +239,11 @@ a.site-title {
     padding-top: 0 !important;
   }
 
+  /* Small breathing room between sidebar card
+     and page title */
   .page__title {
     margin-top: 0 !important;
-    padding-top: 0 !important;
+    padding-top: 0.5em !important;
   }
 
   .page__inner-wrap {
@@ -264,11 +266,11 @@ a.site-title {
   }
 
   /* Mobile author profile card — frosted glass panel,
-     reduced bottom margin to close gap with page title */
+     comfortable bottom margin for spacing above page title */
   .sidebar {
     width: 100% !important;
     max-width: 480px;
-    margin: 0 auto 0.25em auto !important;
+    margin: 0 auto 0.75em auto !important;
     padding: 1em !important;
     background: rgba(255, 255, 255, 0.88) !important;
     backdrop-filter: blur(8px);
