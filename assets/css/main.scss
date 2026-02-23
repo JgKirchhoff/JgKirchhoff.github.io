@@ -61,15 +61,15 @@ html {
   top: 64px;
   left: 0;
   right: 0;
-  z-index: 0;
+  z-index: 5;
 }
 
-/* Adjust main content to account for fixed banner */
+/* Adjust main content to account for fixed banner and go behind it */
 .initial-content,
 .page {
   margin-top: 220px;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 /* --- Top Nav Bar --- */
@@ -240,6 +240,10 @@ a.site-title {
 .author__name {
   font-family: 'Libre Baskerville', Georgia, serif !important;
   color: #4A3728 !important;
+  background-color: #ffffff !important;
+  padding: 10px 8px !important;
+  border-radius: 4px !important;
+  margin-top: 10px !important;
 }
 
 .sidebar .author__bio,
