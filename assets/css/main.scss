@@ -60,6 +60,7 @@ html {
   position: fixed;
   top: 64px;
   left: 0;
+  right: 0;
   z-index: 1;
 }
 
@@ -227,6 +228,11 @@ a.site-title {
 }
 
 /* --- Author Sidebar --- */
+.sidebar {
+  position: relative;
+  z-index: 60;
+}
+
 .sidebar .author__name,
 .author__name {
   font-family: 'Libre Baskerville', Georgia, serif !important;
