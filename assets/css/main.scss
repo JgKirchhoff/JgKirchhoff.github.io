@@ -227,9 +227,26 @@ a.site-title {
     margin-top: 120px;
   }
 
-  /* Remove extra top margin on #main for mobile */
+  /* Remove ALL top spacing between sidebar card
+     and page title on mobile */
   #main {
     margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  .page {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  .page__title {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  .page__inner-wrap {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
   }
 
   .author__urls-wrapper button {
@@ -359,6 +376,8 @@ a.site-title {
   background: transparent !important;
   padding: 2px 0 !important;
   border-radius: 0 !important;
+  /* Prevents "@ UT" from wrapping off "NASA NSTGRO Fellow" */
+  white-space: nowrap;
 }
 
 .author__urls-wrapper a,
