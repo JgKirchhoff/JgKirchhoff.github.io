@@ -48,6 +48,7 @@
    0  = Default/background
    10 = Main page content (goes behind banner)
    15 = Mountain banner (fixed header)
+   16 = #main container (lifts sidebar above banner)
    20 = Masthead/nav bar
    30 = Sidebar (sticky, always on top)
    50+ = Dropdowns, modals
@@ -73,13 +74,23 @@ html {
 }
 
 /* Adjust main content to account for fixed banner.
-   NOTE: No z-index here — setting z-index would create a stacking context
-   that traps the sidebar inside it, preventing it from appearing above
-   the banner regardless of the sidebar's own z-index value. */
+   NOTE: No z-index on .initial-content/.page — setting one would create
+   a stacking context that traps the sidebar below the banner. */
 .initial-content,
 .page {
   margin-top: 220px;
   position: relative;
+}
+
+/* --- #main stacking context fix ---
+   animation in _page.scss creates a stacking context on #main.
+   Without an explicit z-index, #main defaults to 0, trapping the
+   sidebar below the banner (z-index: 15). Setting z-index: 16
+   lifts the entire #main stacking context above the banner so the
+   sidebar's z-index: 30 renders on top correctly. */
+#main {
+  position: relative;
+  z-index: 16;
 }
 
 /* --- Top Nav Bar --- */
