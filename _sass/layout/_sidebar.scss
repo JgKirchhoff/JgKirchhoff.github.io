@@ -20,9 +20,7 @@
   @media screen and (min-width: $sidebar-screen-min-width) {
     height: auto;
     overflow-y: visible;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 10px;
+    position: relative;
     padding-top: 0;
     z-index: 30;
   }
@@ -152,6 +150,9 @@
     display: block;
     width: auto;
     height: auto;
+    position: sticky;
+    top: 284px;
+    z-index: 25;
   }
 
   img {
