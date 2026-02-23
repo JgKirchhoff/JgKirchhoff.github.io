@@ -10,9 +10,9 @@ Thermoplastic fusion bonding governs the structural integrity of welded and in-s
 
 1. **Intimate contact** — pressure-driven resin flow and asperity collapse  
 2. **Interdiffusion** — polymer chain interpenetration across the interface  
-3. **Crystallization** — solidification that ultimately arrests further healing  
+3. **Crystallization** — solidification that arrests further healing  
 
-In high-rate manufacturing, rapid cooling severely limits the available bonding window, making conventional melt-based processing both rate-limiting and energy intensive.
+In high-rate manufacturing, rapid cooling severely constrains this bonding window, making conventional melt-based processing both rate-limiting and energy intensive.
 
 ![Fusion Bonding](/images/fusion-bonding.jpg)
 
@@ -29,13 +29,13 @@ This approach enables:
 - Vacuum-bag-only oven processing (no autoclave)  
 - Compatibility with fast cooling rates  
 
-![OATMEAL Table of Contents Figure](/images/oatmeal_toc.png)
+<img src="/images/oatmeal_toc.svg" alt="OATMEAL TOC Figure" style="max-width: 700px; width: 100%; height: auto; display: block; margin: 2rem auto;">
 
-**Read the full paper in Advanced Materials:**  
-https://doi.org/10.1002/adma.202514390  
+**Read the full paper in _Advanced Materials_:**  
+[Kirchhoff et al., Advanced Materials (2025)](https://doi.org/10.1002/adma.202514390)
 
 **Project news coverage and NASA CIF-iR&D support:**  
-https://www.me.utexas.edu/news/1904-graduate-student-joseph-kirchhoff-receives-nasa-cif-irad-grant  
+[UT Austin News Article](https://www.me.utexas.edu/news/1904-graduate-student-joseph-kirchhoff-receives-nasa-cif-irad-grant)
 
 ## Scaling & Integration
 
