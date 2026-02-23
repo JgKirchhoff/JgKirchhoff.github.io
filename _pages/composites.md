@@ -4,37 +4,33 @@ title: "Thermoplastic Composites"
 author_profile: true
 ---
 
-## Fusion Bonding
+## Thermoplastic Composites
 
-Thermoplastic fusion bonding involves three coupled mechanisms: (1) **intimate contact** via pressure-driven resin flow and asperity collapse, (2) **interdiffusion** through polymer chain interpenetration, and (3) **crystallization** that solidifies and inhibits further bonding. Rapid cooling in high-rate manufacturing severely constrains this bonding window.
+My research focuses on accelerating the manufacturing of high-performance thermoplastic composites for aerospace applications. Traditional processing relies on melt-based consolidation and autoclaves, which are energy intensive and rate limiting.
 
-![Fusion Bonding](/images/fusion-bonding.jpg)
+## OATMEAL: Sub-Melt Thermoplastic Prepreg
 
-## OATMEAL: Sub-Melt Consolidation
+I developed **OATMEAL (Out-of-autoclave Amorphous/Crystalline Thermoplastic Materials for Energy-Efficient Aerospace-Grade Laminates)** — a thermoplastic carbon-fiber prepreg architecture that enables consolidation **below the crystalline melt temperature**.
 
-To decouple bonding from melt-processing constraints, I developed **OATMEAL (Out-of-autoclave Amorphous/Crystalline Thermoplastic Materials for Energy-Efficient Aerospace-Grade Laminates)**—a PEI-sheathed CF/PEEK architecture enabling bonding at **300°C** (80°C below PEEK's melt point).
+Rather than fully melting PEEK during processing, OATMEAL leverages a designed amorphous–crystalline interface that enables bonding at 300 °C (≈80 °C below the melt point). By avoiding bulk melting, we decouple bonding from conventional melt-processing constraints.
 
-The design:
-- Thin amorphous PEI layer applied to prepreg surfaces
-- Laser ablation thins to an intermixed 5–10 µm PEI–PEEK interface
-- Preserves existing crystallinity while enabling healing below melt
+This approach enables:
 
-![High-Level Architecture](/images/high_level.png)
+- ~75% reduction in processing energy  
+- ~5× increase in production rates  
+- Vacuum-bag-only oven processing (no autoclave required)  
+- Preservation of crystalline microstructure  
 
-## Characterization via AFM-IR & Fast-Rate Processing
+The result is a pathway toward scalable, high-rate thermoplastic composite manufacturing.
 
-Chemical mapping (FT-IR and nanoscale AFM-IR) confirms graded PEI–PEEK intermixing rather than discrete layering, validating the "Goldilocks zone" design.
+![OATMEAL Table of Contents Figure](/images/oatmeal_toc.png)
 
-![AFM-IR Nanoscale Mapping](/images/AFM.png)
+**Read the full paper in Advanced Materials:**  
+https://doi.org/10.1002/adma.202514390  
 
-OATMEAL enables **vacuum-bag-only (VBO) oven processing** with unconstrained fast cooling rates—achieving aerospace-quality parts **5× faster** while reducing energy use by **~75%** versus conventional autoclaves.
+**Project news coverage and NASA CIF-iR&D support:**  
+https://www.me.utexas.edu/news/1904-graduate-student-joseph-kirchhoff-receives-nasa-cif-irad-grant  
 
-![Fast Cooling Rates](/images/fast_rate.png)
+## Ongoing Work
 
-## Scaling & Partnerships
-
-Current work focuses on integrating OATMEAL into in-situ consolidation platforms (AFP) and identifying industrial partners to scale this technology for large-scale aerostructure manufacturing.
-
----
-
-**Supported by NASA NSTGRO fellowship:** *"Data-Driven Modeling and Optimization of Robotic In-situ Consolidation of Thermoplastic Composites."*
+Current efforts focus on integrating OATMEAL into in-situ consolidation platforms (e.g., automated fiber placement) and scaling the technology for large aerostructure manufacturing.
