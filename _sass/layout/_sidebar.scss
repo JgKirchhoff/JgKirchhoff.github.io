@@ -150,9 +150,8 @@
     display: block;
     width: auto;
     height: auto;
-    position: sticky;
-    top: 284px;
-    z-index: 25;
+    /* Removed position: sticky — it caused the avatar to float
+       over the name/bio content below it */
   }
 
   img {
@@ -178,6 +177,8 @@
     width: 100%;
     padding-left: 0;
     padding-right: 0;
+    /* Ensures content flows naturally below the avatar */
+    clear: both;
   }
 }
 
@@ -189,6 +190,7 @@
     margin-bottom: 10px;
   }
 }
+
 .sidebar .author__name {
   font-family: $sans-serif;
   font-size: $type-size-5;
