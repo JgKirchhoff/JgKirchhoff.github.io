@@ -1,60 +1,57 @@
----
----
-
 /*
  * This file controls what is imported from /_sass
  */
 
 @import
-  "granola-variables",
+    "granola-variables",
 
-  "vendor/breakpoint/breakpoint",
+    "vendor/breakpoint/breakpoint",
 
-  "themes",
-  "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
-  "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
+    "themes",
+    "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
+    "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
 
-  "include/mixins",
-  "vendor/susy/susy",
+    "include/mixins",
+    "vendor/susy/susy",
 
-  "layout/reset",
-  "layout/base",
+    "layout/reset",
+    "layout/base",
 
-  "include/utilities",
-  "layout/tables",
-  "layout/buttons",
-  "layout/notices",
-  "layout/masthead",
-  "layout/navigation",
-  "layout/footer",
-  "syntax",
+    "include/utilities",
+    "layout/tables",
+    "layout/buttons",
+    "layout/notices",
+    "layout/masthead",
+    "layout/navigation",
+    "layout/footer",
+    "syntax",
 
-  "layout/forms",
+    "layout/forms",
 
-  "layout/page",
-  "layout/archive",
-  "layout/sidebar",
-  "layout/json_cv",
+    "layout/page",
+    "layout/archive",
+    "layout/sidebar",
+    "layout/json_cv",
 
-  "vendor/font-awesome/fontawesome",
-  "vendor/font-awesome/solid",
-  "vendor/font-awesome/brands"
+    "vendor/font-awesome/fontawesome",
+    "vendor/font-awesome/solid",
+    "vendor/font-awesome/brands"
 ;
 
 /* ============================================
    🏕️ GRANOLA CSS OVERRIDES
    Z-INDEX HIERARCHY
-
+   
    0  = Default/background
    10 = Main page content (goes behind banner)
-   15 = Mountain banner (sticky header image)
+   15 = Mountain banner (fixed header)
    20 = Masthead/nav bar
-   40 = Sidebar "profile card" (avatar + name/bio) above banner
+   30 = Sidebar (sticky, always on top)
    50+ = Dropdowns, modals
    ============================================ */
 
-html,
-body {
+body,
+html {
   background-color: #ffffff !important;
 }
 
@@ -65,18 +62,18 @@ body {
   margin-top: 0;
   background: url("/images/background.jpg") center 40% / cover no-repeat;
   background-color: #4A3728;
-
   position: sticky;
-  top: 64px;          /* desktop masthead height */
+  top: 64px;
   left: 0;
   right: 0;
   z-index: 15;
 }
 
-/* Main content sits "under" the banner when you scroll */
+/* Adjust main content to account for fixed banner and go behind it */
 .initial-content,
 .page {
   margin-top: 220px;
+  margin-left: 250px;
   position: relative;
   z-index: 10;
 }
@@ -167,46 +164,124 @@ a.site-title {
 
 /* --- Desktop: hide hamburger --- */
 @media (min-width: 925px) {
-  #nav-toggle { display: none !important; }
-  #nav-hidden { display: none !important; }
+  #nav-toggle {
+    display: none !important;
+  }
+
+  #nav-hidden {
+    display: none !important;
+  }
 }
 
-/* ==========================================================
-   SIDEBAR + BANNER FIX (key change)
-   - Sidebar container is NOT above the banner.
-   - Only the "profile card" (avatar + content) is above.
-   - Social links etc. can scroll behind the banner.
-   ========================================================== */
+/* --- Mobile --- */
+@media (max-width: 924px) {
+  .greedy-nav .visible-links li:not(.persist) {
+    display: none !important;
+  }
 
-/* The sidebar container should NOT float above the banner */
-.sidebar,
+  #nav-toggle {
+    display: block !important;
+    position: absolute;
+    right: 1em;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+
+  .greedy-nav .hidden-links {
+    position: absolute;
+    right: 0;
+    top: 100%;
+  }
+
+  #mountain-banner {
+    height: 120px;
+    margin-top: 0;
+    top: 50px;
+  }
+
+  .initial-content,
+  .page {
+    margin-top: 120px;
+    margin-left: 0;
+  }
+
+  .author__urls-wrapper button {
+    display: none !important;
+  }
+
+  .author__urls {
+    display: block !important;
+    position: relative !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  .page {
+    padding-bottom: 2em;
+  }
+
+  .page__footer {
+    position: relative !important;
+  }
+
+  body {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  /* --- Sidebar on Mobile --- */
+  .sidebar {
+    position: relative !important;
+    width: 100% !important;
+    height: auto !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    overflow-y: visible !important;
+  }
+
+  .sidebar.sticky {
+    position: relative !important;
+    width: 100% !important;
+    height: auto !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    overflow-y: visible !important;
+  }
+}
+
+/* --- Author Sidebar (Fixed/Sticky) --- */
+.sidebar {
+  z-index: 30 !important;
+  position: fixed !important;
+  top: 64px !important;
+  left: 0 !important;
+  right: auto !important;
+  width: 250px !important;
+  height: calc(100vh - 64px) !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  padding-right: 10px !important;
+}
+
 .sidebar.sticky {
-  position: relative;
-  z-index: 12 !important; /* below banner(15), above main(10) */
+  z-index: 30 !important;
+  position: fixed !important;
+  top: 64px !important;
+  left: 0 !important;
+  right: auto !important;
+  width: 250px !important;
+  height: calc(100vh - 64px) !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  padding-right: 10px !important;
 }
 
-/* Keep avatar + content above banner AND prevent them from rising onto it */
-.sidebar .author__avatar,
-.sidebar .author__content {
-  position: sticky;
-  top: calc(64px + 220px + 12px); /* masthead + banner + gap */
-  z-index: 40;
-}
-
-/* Ensure the image is definitely on top */
-.sidebar .author__avatar img {
-  position: relative;
-  z-index: 45;
-}
-
-/* Allow the social links block to slide behind the mountain */
-.sidebar .author__urls-wrapper,
-.sidebar .author__urls {
-  position: relative;
-  z-index: 5; /* safely below banner */
-}
-
-/* --- Author Sidebar styles (your originals, kept) --- */
 .sidebar .author__name,
 .author__name {
   font-family: 'Libre Baskerville', Georgia, serif !important;
@@ -306,8 +381,13 @@ hr {
   color: #B8A99A !important;
 }
 
-.page__footer a { color: #7A8B69 !important; }
-.page__footer a:hover { color: #ffffff !important; }
+.page__footer a {
+  color: #7A8B69 !important;
+}
+
+.page__footer a:hover {
+  color: #ffffff !important;
+}
 
 .page__footer footer {
   color: #B8A99A !important;
@@ -375,73 +455,17 @@ table tr:hover td {
 }
 
 /* --- Archive items --- */
-.archive__item-title a { color: #4A3728 !important; }
-.archive__item-title a:hover { color: #2D5016 !important; }
+.archive__item-title a {
+  color: #4A3728 !important;
+}
+
+.archive__item-title a:hover {
+  color: #2D5016 !important;
+}
 
 /* --- Sidebar social icons --- */
 .author__urls .svg-inline--fa,
 .author__urls .fa,
 .author__urls i {
   color: #7A8B69 !important;
-}
-
-/* --- Mobile --- */
-@media (max-width: 924px) {
-  .greedy-nav .visible-links li:not(.persist) {
-    display: none !important;
-  }
-
-  #nav-toggle {
-    display: block !important;
-    position: absolute;
-    right: 1em;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-  }
-
-  .greedy-nav .hidden-links {
-    position: absolute;
-    right: 0;
-    top: 100%;
-  }
-
-  #mountain-banner {
-    height: 120px;
-    margin-top: 0;
-    top: 50px; /* mobile masthead height */
-  }
-
-  .initial-content,
-  .page {
-    margin-top: 120px;
-  }
-
-  /* update sticky offset for smaller nav+banner */
-  .sidebar .author__avatar,
-  .sidebar .author__content {
-    top: calc(50px + 120px + 10px);
-  }
-
-  .author__urls-wrapper button {
-    display: none !important;
-  }
-
-  .author__urls {
-    display: block !important;
-    position: relative !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    border: 0 !important;
-    background: transparent !important;
-    box-shadow: none !important;
-  }
-
-  .page { padding-bottom: 2em; }
-  .page__footer { position: relative !important; }
-
-  body {
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
-  }
 }
