@@ -227,6 +227,11 @@ a.site-title {
     margin-top: 120px;
   }
 
+  /* Remove extra top margin on #main for mobile */
+  #main {
+    margin-top: 0 !important;
+  }
+
   .author__urls-wrapper button {
     display: none !important;
   }
@@ -241,12 +246,12 @@ a.site-title {
     box-shadow: none !important;
   }
 
-  /* Mobile author profile card — centered, full width,
-     frosted glass panel beneath the banner */
+  /* Mobile author profile card — frosted glass panel,
+     reduced bottom margin to close gap with page title */
   .sidebar {
     width: 100% !important;
     max-width: 480px;
-    margin: 0 auto 1.5em auto !important;
+    margin: 0 auto 0.25em auto !important;
     padding: 1em !important;
     background: rgba(255, 255, 255, 0.88) !important;
     backdrop-filter: blur(8px);
