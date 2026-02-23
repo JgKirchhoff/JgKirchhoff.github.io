@@ -150,8 +150,8 @@
     display: block;
     width: auto;
     height: auto;
-    /* Removed position: sticky — it caused the avatar to float
-       over the name/bio content below it */
+    position: relative; /* Restores stacking context so z-index works */
+    z-index: 30;        /* Sits above banner (z-index: 15), flows normally with content */
   }
 
   img {
