@@ -146,6 +146,24 @@
   vertical-align: top;
   width: 36px;
 
+  /* Mobile: larger centered avatar */
+  @media screen and (max-width: 924px) {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0.5em;
+
+    img {
+      width: 90px !important;
+      height: 90px !important;
+      object-fit: cover;
+      border-radius: 50% !important;
+      border: 2px solid rgba(255, 255, 255, 0.6) !important;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+      padding: 0 !important;
+    }
+  }
+
   @include breakpoint($large) {
     display: block;
     width: auto;
@@ -172,12 +190,20 @@
   padding-right: 25px;
   line-height: 1;
 
+  /* Mobile: full width, centered, below avatar */
+  @media screen and (max-width: 924px) {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   @include breakpoint($large) {
     display: block;
     width: 100%;
     padding-left: 0;
     padding-right: 0;
-    /* Ensures content flows naturally below the avatar */
     clear: both;
   }
 }
@@ -233,6 +259,13 @@
     a {
       margin-bottom: 0;
     }
+  }
+
+  /* Mobile: full width below content */
+  @media screen and (max-width: 924px) {
+    display: block;
+    width: 100%;
+    text-align: center;
   }
 
   @include breakpoint($large) {
