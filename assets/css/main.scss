@@ -257,10 +257,8 @@ a.site-title {
 
 /* --- Author Sidebar ---
    z-index: 16 = above banner (15), below masthead (20).
-   Sidebar scrolls over the mountain but dips cleanly
-   behind the nav bar at the top. No background on the
-   sidebar or avatar — only the text content areas get
-   white backgrounds so the profile picture looks natural. */
+   Frosted glass effect on text areas blends naturally
+   with the mountain banner instead of harsh white boxes. */
 .sidebar {
   position: relative;
   z-index: 16 !important;
@@ -270,42 +268,49 @@ a.site-title {
   z-index: 16 !important;
 }
 
-/* No background on avatar — profile picture should
-   look natural without a white box around it */
+/* No background on avatar — profile picture looks natural */
 .author__avatar {
   background: transparent !important;
 }
 
-/* White background only on text content areas so
-   name, bio, and links are readable over the mountain */
+/* Frosted glass on name/bio block */
 .author__content {
-  background-color: #ffffff !important;
-  border-radius: 4px;
-  padding: 4px 8px !important;
+  background: rgba(255, 255, 255, 0.82) !important;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 6px !important;
+  padding: 8px 10px !important;
+  margin-top: 6px;
 }
 
+/* Frosted glass on social links block */
 .author__urls-wrapper {
-  background-color: #ffffff !important;
-  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.82) !important;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 6px !important;
+  padding: 6px 10px !important;
+  margin-top: 4px;
 }
 
+/* Name and bio inherit frosted glass — no extra background */
 .sidebar .author__name,
 .author__name {
   font-family: 'Libre Baskerville', Georgia, serif !important;
   color: #4A3728 !important;
-  background-color: #ffffff !important;
-  padding: 10px 8px !important;
-  border-radius: 4px !important;
-  margin-top: 10px !important;
+  background: transparent !important;
+  padding: 4px 0 !important;
+  border-radius: 0 !important;
+  margin-top: 4px !important;
 }
 
 .sidebar .author__bio,
 .author__bio {
   color: #7A8B69 !important;
   font-style: italic;
-  background-color: #ffffff !important;
-  padding: 4px 8px !important;
-  border-radius: 4px !important;
+  background: transparent !important;
+  padding: 2px 0 !important;
+  border-radius: 0 !important;
 }
 
 .author__urls-wrapper a,
