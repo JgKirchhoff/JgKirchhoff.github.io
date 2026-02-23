@@ -229,8 +229,11 @@ a.site-title {
 
 /* --- Author Sidebar --- */
 .sidebar {
-  position: relative;
-  z-index: 60;
+  z-index: 60 !important;
+}
+
+.sidebar.sticky {
+  z-index: 60 !important;
 }
 
 .sidebar .author__name,
