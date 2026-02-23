@@ -46,7 +46,6 @@
    10 = Main page content (goes behind banner)
    15 = Mountain banner (fixed header)
    20 = Masthead/nav bar
-   25 = Profile picture (sticky, stops at banner)
    30 = Sidebar (sticky, always on top)
    50+ = Dropdowns, modals
    ============================================ */
@@ -231,18 +230,6 @@ a.site-title {
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
   }
-
-  .author__avatar {
-    position: sticky;
-    top: 114px;
-    z-index: 25;
-  }
-
-  .sidebar .author__avatar img {
-    position: sticky;
-    top: 114px;
-    z-index: 25;
-  }
 }
 
 /* --- Author Sidebar --- */
@@ -252,19 +239,6 @@ a.site-title {
 
 .sidebar.sticky {
   z-index: 30 !important;
-}
-
-/* --- Profile Picture (sticky, stops at mountain banner) --- */
-.author__avatar {
-  position: sticky;
-  top: 284px;
-  z-index: 25;
-}
-
-.sidebar .author__avatar img {
-  position: sticky;
-  top: 284px;
-  z-index: 25;
 }
 
 .sidebar .author__name,
