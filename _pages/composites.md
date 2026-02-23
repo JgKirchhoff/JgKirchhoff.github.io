@@ -18,7 +18,7 @@ In high-rate manufacturing, rapid cooling severely constrains this bonding windo
 
 ## OATMEAL: Sub-Melt Consolidation
 
-To decouple bonding from melt-processing constraints, I developed **OATMEAL (Out-of-autoclave Amorphous/Crystalline Thermoplastic Materials for Energy-Efficient Aerospace-Grade Laminates)** — a thermoplastic carbon-fiber prepreg architecture that enables consolidation **below the crystalline melt temperature**.
+To decouple bonding from melt-processing constraints, Tyler Hudson (NASA Langley) and I developed **OATMEAL (Out-of-autoclave Amorphous/Crystalline Thermoplastic Materials for Energy-Efficient Aerospace-Grade Laminates)** — a thermoplastic carbon-fiber prepreg architecture that enables consolidation **below the crystalline melt temperature**.
 
 OATMEAL uses a designed amorphous–crystalline interfacial architecture that allows bonding at 300 °C (≈80 °C below the PEEK melt point) without fully melting the bulk matrix. By preserving crystallinity while enabling interfacial healing, we unlock faster and more energy-efficient processing.
 
