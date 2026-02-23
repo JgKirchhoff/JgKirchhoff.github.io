@@ -47,16 +47,18 @@
 
    0  = Default/background
    15 = Mountain banner (fixed)
-   20 = Masthead/nav bar
-   30 = Sidebar (above banner)
+   16 = Sidebar (above banner, below masthead)
+   20 = Masthead/nav bar (fixed, always on top)
    50+ = Dropdowns, modals
 
-   KEY PRINCIPLE:
+   KEY PRINCIPLES:
    - #main has animation: none so it does NOT
      create a stacking context. This lets the
-     sidebar (z-index: 30) sit above the banner
-     (z-index: 15) while page content (no z-index)
-     scrolls naturally behind it.
+     sidebar sit above the banner while page
+     content scrolls behind it.
+   - Sidebar z-index: 16 keeps it above the
+     banner but below the masthead so it dips
+     behind the nav bar on scroll.
    ============================================ */
 
 body,
@@ -92,9 +94,8 @@ html {
    creates a stacking context, trapping all children
    (including sidebar) below the banner.
    Overriding animation: none removes that stacking
-   context so sidebar z-index: 30 works in the root
-   stacking context and sits above the banner,
-   while page content (no z-index) scrolls behind it. */
+   context so sidebar z-index works in the root
+   stacking context. */
 #main {
   animation: none !important;
   -webkit-animation: none !important;
@@ -255,24 +256,34 @@ a.site-title {
 }
 
 /* --- Author Sidebar ---
-   With #main animation removed, .sidebar z-index: 30
-   now works in the root stacking context and sits
-   above the banner (z-index: 15).
-   White background ensures text is readable as it
-   overlaps the mountain image on scroll. */
+   z-index: 16 = above banner (15), below masthead (20).
+   Sidebar scrolls over the mountain but dips cleanly
+   behind the nav bar at the top. No background on the
+   sidebar or avatar — only the text content areas get
+   white backgrounds so the profile picture looks natural. */
 .sidebar {
   position: relative;
-  z-index: 30 !important;
-  background-color: #ffffff !important;
-  border-radius: 6px;
+  z-index: 16 !important;
 }
 
 .sidebar.sticky {
-  z-index: 30 !important;
-  background-color: #ffffff !important;
+  z-index: 16 !important;
 }
 
-.author__content,
+/* No background on avatar — profile picture should
+   look natural without a white box around it */
+.author__avatar {
+  background: transparent !important;
+}
+
+/* White background only on text content areas so
+   name, bio, and links are readable over the mountain */
+.author__content {
+  background-color: #ffffff !important;
+  border-radius: 4px;
+  padding: 4px 8px !important;
+}
+
 .author__urls-wrapper {
   background-color: #ffffff !important;
   border-radius: 4px;
