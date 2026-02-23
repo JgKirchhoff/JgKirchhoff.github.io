@@ -72,12 +72,14 @@ html {
   z-index: 15;
 }
 
-/* Adjust main content to account for fixed banner and go behind it */
+/* Adjust main content to account for fixed banner.
+   NOTE: No z-index here — setting z-index would create a stacking context
+   that traps the sidebar inside it, preventing it from appearing above
+   the banner regardless of the sidebar's own z-index value. */
 .initial-content,
 .page {
   margin-top: 220px;
   position: relative;
-  z-index: 10;
 }
 
 /* --- Top Nav Bar --- */
