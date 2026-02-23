@@ -73,7 +73,6 @@ html {
 .initial-content,
 .page {
   margin-top: 220px;
-  margin-left: 250px;
   position: relative;
   z-index: 10;
 }
@@ -203,7 +202,6 @@ a.site-title {
   .initial-content,
   .page {
     margin-top: 120px;
-    margin-left: 0;
   }
 
   .author__urls-wrapper button {
@@ -232,54 +230,19 @@ a.site-title {
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
   }
-
-  /* --- Sidebar on Mobile --- */
-  .sidebar {
-    position: relative !important;
-    width: 100% !important;
-    height: auto !important;
-    top: auto !important;
-    left: auto !important;
-    right: auto !important;
-    overflow-y: visible !important;
-  }
-
-  .sidebar.sticky {
-    position: relative !important;
-    width: 100% !important;
-    height: auto !important;
-    top: auto !important;
-    left: auto !important;
-    right: auto !important;
-    overflow-y: visible !important;
-  }
 }
 
-/* --- Author Sidebar (Fixed/Sticky) --- */
+/* --- Author Sidebar --- */
 .sidebar {
   z-index: 30 !important;
-  position: fixed !important;
+  position: sticky !important;
   top: 64px !important;
-  left: 0 !important;
-  right: auto !important;
-  width: 250px !important;
-  height: calc(100vh - 64px) !important;
-  overflow-y: auto !important;
-  overflow-x: hidden !important;
-  padding-right: 10px !important;
 }
 
 .sidebar.sticky {
   z-index: 30 !important;
-  position: fixed !important;
+  position: sticky !important;
   top: 64px !important;
-  left: 0 !important;
-  right: auto !important;
-  width: 250px !important;
-  height: calc(100vh - 64px) !important;
-  overflow-y: auto !important;
-  overflow-x: hidden !important;
-  padding-right: 10px !important;
 }
 
 .sidebar .author__name,
