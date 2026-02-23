@@ -78,6 +78,23 @@ html {
   left: 0;
   right: 0;
   z-index: 15;
+
+  /* Soft gradient fade at the bottom edge — dissolves
+     the hard line into the page background naturally */
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: linear-gradient(
+      to bottom,
+      transparent,
+      rgba(255, 255, 255, 0.85)
+    );
+    pointer-events: none;
+  }
 }
 
 /* Adjust main content to account for fixed banner.
@@ -220,6 +237,11 @@ a.site-title {
     height: 120px;
     margin-top: 0;
     top: 50px;
+
+    /* Proportionally smaller fade on mobile */
+    &::after {
+      height: 50px;
+    }
   }
 
   .initial-content,
