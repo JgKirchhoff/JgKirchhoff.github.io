@@ -44,14 +44,19 @@
 /* ============================================
    🏕️ GRANOLA CSS OVERRIDES
    Z-INDEX HIERARCHY
-   
+
    0  = Default/background
-   10 = Main page content (goes behind banner)
-   15 = Mountain banner (fixed header)
-   16 = #main container (lifts sidebar above banner)
+   15 = Mountain banner (fixed)
    20 = Masthead/nav bar
-   30 = Sidebar (sticky, always on top)
+   30 = Sidebar (above banner)
    50+ = Dropdowns, modals
+
+   KEY PRINCIPLE:
+   - #main has animation: none so it does NOT
+     create a stacking context. This lets the
+     sidebar (z-index: 30) sit above the banner
+     (z-index: 15) while page content (no z-index)
+     scrolls naturally behind it.
    ============================================ */
 
 body,
@@ -74,8 +79,8 @@ html {
 }
 
 /* Adjust main content to account for fixed banner.
-   NOTE: No z-index on .initial-content/.page — setting one would create
-   a stacking context that traps the sidebar below the banner. */
+   NO z-index — would create a stacking context
+   trapping sidebar below the banner. */
 .initial-content,
 .page {
   margin-top: 220px;
@@ -83,14 +88,16 @@ html {
 }
 
 /* --- #main stacking context fix ---
-   animation in _page.scss creates a stacking context on #main.
-   Without an explicit z-index, #main defaults to 0, trapping the
-   sidebar below the banner (z-index: 15). Setting z-index: 16
-   lifts the entire #main stacking context above the banner so the
-   sidebar's z-index: 30 renders on top correctly. */
+   _page.scss applies animation: intro to #main which
+   creates a stacking context, trapping all children
+   (including sidebar) below the banner.
+   Overriding animation: none removes that stacking
+   context so sidebar z-index: 30 works in the root
+   stacking context and sits above the banner,
+   while page content (no z-index) scrolls behind it. */
 #main {
-  position: relative;
-  z-index: 16;
+  animation: none !important;
+  -webkit-animation: none !important;
 }
 
 /* --- Top Nav Bar --- */
@@ -103,7 +110,6 @@ html {
 
 .masthead__inner-wrap,
 .masthead__menu,
-.initial-content,
 .search-content {
   background-color: #ffffff !important;
 }
@@ -248,13 +254,28 @@ a.site-title {
   }
 }
 
-/* --- Author Sidebar --- */
+/* --- Author Sidebar ---
+   With #main animation removed, .sidebar z-index: 30
+   now works in the root stacking context and sits
+   above the banner (z-index: 15).
+   White background ensures text is readable as it
+   overlaps the mountain image on scroll. */
 .sidebar {
+  position: relative;
   z-index: 30 !important;
+  background-color: #ffffff !important;
+  border-radius: 6px;
 }
 
 .sidebar.sticky {
   z-index: 30 !important;
+  background-color: #ffffff !important;
+}
+
+.author__content,
+.author__urls-wrapper {
+  background-color: #ffffff !important;
+  border-radius: 4px;
 }
 
 .sidebar .author__name,
@@ -271,6 +292,9 @@ a.site-title {
 .author__bio {
   color: #7A8B69 !important;
   font-style: italic;
+  background-color: #ffffff !important;
+  padding: 4px 8px !important;
+  border-radius: 4px !important;
 }
 
 .author__urls-wrapper a,
