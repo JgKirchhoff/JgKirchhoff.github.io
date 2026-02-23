@@ -43,6 +43,14 @@
 
 /* ============================================
    🏕️ GRANOLA CSS OVERRIDES
+   Z-INDEX HIERARCHY
+   
+   0  = Default/background
+   10 = Main page content (goes behind banner)
+   15 = Mountain banner (fixed header)
+   20 = Masthead/nav bar
+   30 = Sidebar (sticky, always on top)
+   50+ = Dropdowns, modals
    ============================================ */
 
 body,
@@ -61,7 +69,7 @@ html {
   top: 64px;
   left: 0;
   right: 0;
-  z-index: 5;
+  z-index: 15;
 }
 
 /* Adjust main content to account for fixed banner and go behind it */
@@ -69,7 +77,7 @@ html {
 .page {
   margin-top: 220px;
   position: relative;
-  z-index: 2;
+  z-index: 10;
 }
 
 /* --- Top Nav Bar --- */
@@ -77,7 +85,7 @@ html {
   background-color: #ffffff !important;
   border-bottom: 2px solid #B8A99A !important;
   margin-bottom: 0 !important;
-  z-index: 50;
+  z-index: 20;
 }
 
 .masthead__inner-wrap,
@@ -229,11 +237,11 @@ a.site-title {
 
 /* --- Author Sidebar --- */
 .sidebar {
-  z-index: 60 !important;
+  z-index: 30 !important;
 }
 
 .sidebar.sticky {
-  z-index: 60 !important;
+  z-index: 30 !important;
 }
 
 .sidebar .author__name,
