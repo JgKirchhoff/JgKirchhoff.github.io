@@ -16,6 +16,13 @@ hide_title: true
       <a class="home-button" href="/inverse-problems/">Inverse Problems</a>
       <a class="home-button" href="/publications/">Publications</a>
     </div>
+    <div class="home-contact-links" aria-label="Contact links">
+      <a href="mailto:{{ site.author.email }}">Email</a>
+      <a href="{{ site.author.googlescholar }}">Google Scholar</a>
+      <a href="{{ site.author.orcid }}">ORCID</a>
+      <a href="https://github.com/{{ site.author.github }}">GitHub</a>
+      <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}">LinkedIn</a>
+    </div>
   </div>
   <figure class="home-hero__visual">
     <img src="/images/joseph-campus.png" alt="Joseph Kirchhoff on the UT Austin campus">
