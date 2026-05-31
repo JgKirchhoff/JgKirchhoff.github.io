@@ -66,9 +66,9 @@ html {
 /* --- Mountain Banner --- */
 #mountain-banner {
   width: 100%;
-  height: 220px;
+  height: 240px;
   margin-top: 0;
-  background: url("/images/background.jpg") center 40% / cover no-repeat;
+  background: url("/images/background.jpg") center 16% / cover no-repeat;
   background-color: #4A3728;
   position: relative;
   top: auto;
@@ -583,6 +583,8 @@ table tr:hover td {
   --granola-sage: #7d9678;
   --granola-clay: #b8643d;
   --granola-river: #4e8da1;
+  --granola-sky: #dbe9ea;
+  --granola-lake-mist: #c7ddda;
   --granola-paper: #f8faf3;
   --granola-white: #ffffff;
   --granola-line: #d9ddd2;
@@ -594,7 +596,7 @@ table tr:hover td {
 
 html,
 body {
-  background: var(--granola-paper) !important;
+  background-color: var(--granola-paper) !important;
   color: var(--granola-ink);
 }
 
@@ -605,30 +607,55 @@ html {
 body {
   padding-top: 0 !important;
   background-image:
+    linear-gradient(
+      180deg,
+      rgba(219, 233, 234, 0.72) 0,
+      rgba(199, 221, 218, 0.48) 23rem,
+      rgba(248, 250, 243, 0.96) 39rem,
+      rgba(248, 250, 243, 1) 100%
+    ),
     linear-gradient(rgba(39, 76, 58, 0.035) 1px, transparent 1px),
     linear-gradient(90deg, rgba(78, 141, 161, 0.035) 1px, transparent 1px);
-  background-size: 44px 44px;
+  background-size: auto, 44px 44px, 44px 44px;
 }
 
 #mountain-banner {
-  height: clamp(8.5rem, 16vw, 11rem);
+  height: clamp(13rem, 22vw, 17rem);
   margin-top: var(--masthead-clearance);
   position: relative;
   top: auto;
   z-index: 1;
   background:
     linear-gradient(180deg, rgba(36, 48, 47, 0.12), rgba(248, 250, 243, 0.18)),
-    url("/images/background.jpg") center 44% / cover no-repeat;
+    url("/images/background.jpg") center 22% / cover no-repeat;
   border-bottom: 0 !important;
 }
 
 #mountain-banner::after {
-  height: 105px;
-  background: linear-gradient(
+  bottom: -96px;
+  height: 260px;
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(199, 221, 218, 0),
+      rgba(199, 221, 218, 0.3) 34%,
+      rgba(199, 221, 218, 0.48) 68%,
+      rgba(248, 250, 243, 0.62)
+    ),
+    url("/images/background.jpg") center 78% / cover no-repeat;
+  -webkit-mask-image: linear-gradient(
     to bottom,
-    rgba(248, 250, 243, 0),
-    rgba(248, 250, 243, 0.84) 72%,
-    rgba(248, 250, 243, 0.95)
+    transparent 0,
+    rgba(0, 0, 0, 0.72) 26%,
+    rgba(0, 0, 0, 0.84) 72%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0,
+    rgba(0, 0, 0, 0.72) 26%,
+    rgba(0, 0, 0, 0.84) 72%,
+    transparent 100%
   );
 }
 
@@ -653,7 +680,7 @@ body {
 .greedy-nav .visible-links,
 .greedy-nav .visible-links li,
 .search-content {
-  background: rgba(248, 250, 243, 0.94) !important;
+  background: rgba(219, 233, 234, 0.94) !important;
 }
 
 .masthead__menu-item,
@@ -663,8 +690,8 @@ body {
 }
 
 .masthead {
-  border-bottom: 1px solid rgba(39, 76, 58, 0.22) !important;
-  box-shadow: 0 8px 26px rgba(36, 48, 47, 0.08);
+  border-bottom: 1px solid rgba(78, 141, 161, 0.28) !important;
+  box-shadow: 0 8px 26px rgba(36, 48, 47, 0.07);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
 }
@@ -1249,13 +1276,14 @@ h1.page__title,
   }
 
   #mountain-banner {
-    height: clamp(6.5rem, 24vw, 8rem);
+    height: clamp(8rem, 32vw, 10rem);
     margin-top: var(--masthead-clearance);
     top: auto;
   }
 
   #mountain-banner::after {
-    height: 70px;
+    bottom: -44px;
+    height: 148px;
   }
 
   .initial-content,
