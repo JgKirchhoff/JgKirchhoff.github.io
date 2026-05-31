@@ -1,23 +1,25 @@
 ---
-permalink: /adventures/
-title: "Adventures"
+permalink: /outside/
+redirect_from:
+  - /adventures/
+title: "Outside"
 author_profile: true
 ---
 
-## Outdoor Guiding
+## Outdoor Education and Mentorship
 
-Outdoor education is a meaningful part of my life outside of research. I am deeply motivated by teaching, mentorship, and helping others build confidence through shared challenge — values that shape both my academic and outdoor work.
+Outdoor education is a meaningful part of my life outside research. I am motivated by teaching, mentorship, and helping people build confidence through shared challenge - values that also shape how I try to collaborate as an engineer and researcher.
 
 My guiding journey began the summer after finishing undergraduate at Purdue, when I led 21-day backpacking trips across the Hawaiian Islands with Wilderness Adventures. 
- I now live in Austin, TX, where I volunteer with [Explore Austin](https://exploreaustin.org/), a nonprofit dedicated to long-term youth mentorship through outdoor adventure. I primarily facilitate mountain biking, canoeing, and outdoor skills/medicine programming. During the academic year, students build foundational skills; each summer culminates in a week-long expedition where they apply what they’ve learned. In 2024, we completed a week-long canoe expedition together — a highlight of the year.
+I now live in Austin, TX, where I volunteer with [Explore Austin](https://exploreaustin.org/), a nonprofit dedicated to long-term youth mentorship through outdoor adventure. I primarily facilitate mountain biking, canoeing, and outdoor skills/medicine programming. During the academic year, students build foundational skills; each summer culminates in a week-long expedition where they apply what they have learned. In 2024, we completed a week-long canoe expedition together - a highlight of the year.
 
 ---
 
-## Life Outside the Lab
+## Life Outside Research
 
-Many of the photos below are from trips I’ve helped lead; others are from weekend adventures with friends. My curiosity extends from thermoplastic composites and inverse problems to landscapes, rivers, and long trail conversations.
+Many of the photos below are from trips I have helped lead; others are from time outside with friends. This page is the less formal corner of the site: a place for mentorship, landscapes, and the parts of life that keep the technical work grounded.
 
-If you enjoy the outdoors as well, I would genuinely love to hear about your latest adventure.
+If you enjoy the outdoors as well, I would genuinely love to hear what you have been exploring lately.
 
 
 <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 1em;">

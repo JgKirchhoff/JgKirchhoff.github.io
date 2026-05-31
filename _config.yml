@@ -12,7 +12,7 @@ site_theme               : "default"
 title                    : "Joseph Kirchhoff"
 title_separator          : "|"
 name                     : &name "Joseph Kirchhoff"
-description              : &description "PhD Student developing computational tools for thermoplastic composites manufacturing"
+description              : &description "Computational mechanics researcher building experimental and numerical tools for thermoplastic composites manufacturing"
 url                      : https://jgkirchhoff.github.io
 baseurl                  : ""
 repository               : "JgKirchhoff/JgKirchhoff.github.io"
@@ -23,7 +23,7 @@ author:
   avatar           : "profile.jpg"
   name             : "Joseph Kirchhoff"
   pronouns         :
-  bio              : "Composites × Computation<br>NASA NSTGRO Fellow @ UT"
+  bio              : "Composites and computation<br>NASA NSTGRO Fellow @ UT Austin"
   email            : "josephgkirchhoff@gmail.com"
 
   # Academic websites
