@@ -11,7 +11,7 @@ author_profile: true
 Outdoor education is a meaningful part of my life outside research. I am motivated by teaching, mentorship, and helping people build confidence through shared challenge - values that also shape how I try to collaborate as an engineer and researcher.
 
 My guiding journey began the summer after finishing undergraduate at Purdue, when I led 21-day backpacking trips across the Hawaiian Islands with Wilderness Adventures. 
-I now live in Austin, TX, where I volunteer with [Explore Austin](https://exploreaustin.org/), a nonprofit dedicated to long-term youth mentorship through outdoor adventure. I primarily facilitate mountain biking, canoeing, and outdoor skills/medicine programming. During the academic year, students build foundational skills; each summer culminates in a week-long expedition where they apply what they have learned. In 2024, we completed a week-long canoe expedition together - a highlight of the year.
+During my years in Austin, TX, I volunteered with [Explore Austin](https://exploreaustin.org/), a nonprofit dedicated to long-term youth mentorship through outdoor adventure. I primarily facilitated mountain biking, canoeing, and outdoor skills/medicine programming. During the academic year, students built foundational skills; each summer culminated in a week-long expedition where they applied what they learned. In 2024, we completed a week-long canoe expedition together - a highlight of the year.
 
 ---
 

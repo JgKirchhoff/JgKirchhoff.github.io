@@ -12,7 +12,7 @@ site_theme               : "default"
 title                    : "Joseph Kirchhoff"
 title_separator          : "|"
 name                     : &name "Joseph Kirchhoff"
-description              : &description "Computational mechanics researcher building experimental and numerical tools for thermoplastic composites manufacturing"
+description              : &description "NASA Langley postdoctoral researcher and incoming University of Utah assistant professor working in mechanics, sensing, and computation for advanced composite manufacturing"
 url                      : https://jgkirchhoff.github.io
 baseurl                  : ""
 repository               : "JgKirchhoff/JgKirchhoff.github.io"
@@ -23,7 +23,7 @@ author:
   avatar           : "profile.jpg"
   name             : "Joseph Kirchhoff"
   pronouns         :
-  bio              : "Composites and computation<br>NASA NSTGRO Fellow @ UT Austin"
+  bio              : "Postdoctoral Researcher, NASA Langley<br>Utah ME faculty, Fall 2027"
   email            : "josephgkirchhoff@gmail.com"
 
   # Academic websites

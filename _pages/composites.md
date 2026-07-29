@@ -18,7 +18,7 @@ In high-rate manufacturing, rapid cooling severely constrains this bonding windo
 
 ## OATMEAL: Sub-Melt Consolidation
 
-To decouple bonding from melt-processing constraints, Tyler Hudson (NASA Langley) and I developed **OATMEAL (Out-of-autoclave Amorphous/Crystalline Thermoplastic Materials for Energy-Efficient Aerospace-Grade Laminates)** — a thermoplastic carbon-fiber prepreg architecture that enables consolidation **below the crystalline melt temperature**.
+To decouple bonding from melt-processing constraints, Tyler Hudson at NASA Langley and I developed **OATMEAL (Out-of-autoclave Amorphous/Crystalline Thermoplastic Materials for Energy-Efficient Aerospace-Grade Laminates)** - a thermoplastic carbon-fiber prepreg architecture that enables consolidation **below the crystalline melt temperature**.
 
 OATMEAL uses a designed amorphous–crystalline interfacial architecture that allows bonding at 300 °C (≈80 °C below the PEEK melt point) without fully melting the bulk matrix. By preserving crystallinity while enabling interfacial healing, we unlock faster and more energy-efficient processing.
 
@@ -34,9 +34,11 @@ This approach enables:
 **Read the full paper in _Advanced Materials_:**  
 [Kirchhoff et al., Advanced Materials (2025)](https://doi.org/10.1002/adma.202514390)
 
-**Project news coverage and NASA CIF-iR&D support:**  
-[UT Austin News Article](https://www.me.utexas.edu/news/1904-graduate-student-joseph-kirchhoff-receives-nasa-cif-irad-grant)
+**Project records and news coverage:**
+
+- [NASA NTRS OATMEAL presentation](https://ntrs.nasa.gov/citations/20240013257)
+- [UT Austin News Article](https://www.me.utexas.edu/news/1904-graduate-student-joseph-kirchhoff-receives-nasa-cif-irad-grant)
 
 ## Scaling & Integration
 
-Ongoing work focuses on integrating OATMEAL into in-situ consolidation platforms (e.g., automated fiber placement) and scaling the technology for large aerostructure manufacturing.
+At NASA Langley, my postdoctoral work continues this collaboration with Tyler Hudson by integrating OATMEAL into in-situ consolidation platforms such as automated fiber placement and scaling the technology for large aerostructure manufacturing. This is also a seed for the research group I will build at the University of Utah: mechanics-informed materials processing for aerospace structures.

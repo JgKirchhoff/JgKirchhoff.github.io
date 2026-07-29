@@ -1,152 +1,101 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
+    "name": "Joseph Kirchhoff",
+    "email": "josephgkirchhoff@gmail.com",
     "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "website": "https://jgkirchhoff.github.io",
+    "summary": "NASA Langley postdoctoral researcher and incoming University of Utah assistant professor working in mechanics, sensing, and computation for advanced composite manufacturing.",
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Earth",
+      "city": "",
       "countryCode": "US",
       "region": ""
     },
     "profiles": [
       {
         "network": "Google Scholar",
-        "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+        "username": "Joseph Kirchhoff",
+        "url": "https://scholar.google.com/citations?user=xi-inBMAAAAJ&hl=en"
       },
       {
         "network": "ORCID",
-        "username": "",
-        "url": "https://orcid.org/yourorcidurl"
+        "username": "0009-0001-1245-4750",
+        "url": "https://orcid.org/0009-0001-1245-4750"
       },
       {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "JgKirchhoff",
+        "url": "https://github.com/JgKirchhoff"
       }
     ]
   },
-  "work": [],
+  "work": [
+    {
+      "name": "NASA Langley Research Center",
+      "position": "Postdoctoral Researcher",
+      "startDate": "",
+      "endDate": "",
+      "summary": "Working with Tyler Hudson on OATMEAL and energy-efficient thermoplastic composite processing.",
+      "highlights": []
+    },
+    {
+      "name": "University of Utah Department of Mechanical Engineering",
+      "position": "Incoming Assistant Professor",
+      "startDate": "2027",
+      "endDate": "",
+      "summary": "Preparing to launch a Utah research group focused on closed-loop digital twins for energy-efficient, autonomous manufacturing of high-performance structures.",
+      "highlights": []
+    }
+  ],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
-      "studyType": "",
+      "institution": "The University of Texas at Austin",
+      "area": "Mechanical Engineering",
+      "studyType": "Ph.D.",
       "startDate": "",
-      "endDate": "2018",
-      "gpa": null,
-      "courses": []
-    },
-    {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
-      "courses": []
-    },
-    {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
+      "endDate": "",
       "gpa": null,
       "courses": []
     }
   ],
-  "skills": [],
+  "skills": [
+    {
+      "name": "Research Areas",
+      "keywords": [
+        "Thermoplastic composite manufacturing",
+        "OATMEAL",
+        "Fusion bonding",
+        "Inverse problems",
+        "Digital twins",
+        "Optimal control",
+        "PDE-constrained optimization",
+        "Full-field experimental mechanics",
+        "Autonomous manufacturing"
+      ]
+    }
+  ],
   "languages": [],
   "interests": [],
   "references": [],
   "publications": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "https://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "https://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
+      "name": "OATMEAL sub-melt consolidation",
+      "publisher": "Advanced Materials",
+      "releaseDate": "2025",
+      "website": "https://doi.org/10.1002/adma.202514390",
+      "summary": "Energy-efficient sub-melt consolidation architecture for aerospace-grade thermoplastic laminates."
     }
   ],
   "presentations": [
     {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
-    },
-    {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
+      "name": "PEI-PEEK Tape Development Journey (OATMEAL)",
+      "event": "NASA Technical Reports Server",
+      "date": "2024",
+      "location": "",
+      "description": "Public NASA NTRS record for OATMEAL project presentation."
     }
   ],
-  "teaching": [
-    {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
-    },
-    {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
-    }
-  ],
-  "portfolio": [
-    {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
-      "date": "",
-      "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
-    }
-  ]
+  "teaching": [],
+  "portfolio": []
 }
