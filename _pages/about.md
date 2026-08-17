@@ -17,7 +17,7 @@ hide_title: true
       <a class="home-button" href="#prospective-students">Prospective Students</a>
     </div>
     <div class="home-contact-links" aria-label="Contact links">
-      <a href="mailto:{{ site.author.email }}">Email</a>
+      <a href="#" data-email-link data-email-user="{{ site.author.email_user }}" data-email-domain="{{ site.author.email_domain }}" aria-label="Email Joseph Kirchhoff">Email</a>
       <a href="{{ site.author.googlescholar }}">Google Scholar</a>
       <a href="{{ site.author.orcid }}">ORCID</a>
       <a href="https://github.com/{{ site.author.github }}">GitHub</a>
@@ -90,7 +90,7 @@ hide_title: true
       <span>Collaborators</span>
       <p>I am especially excited about collaborations that connect manufacturing science, aerospace structures, uncertainty quantification, autonomous systems, remote operations, and real process data.</p>
     </div>
-    <a class="home-opportunity home-opportunity--link" href="mailto:{{ site.author.email }}">
+    <a class="home-opportunity home-opportunity--link" href="#" data-email-link data-email-user="{{ site.author.email_user }}" data-email-domain="{{ site.author.email_domain }}" aria-label="Email Joseph Kirchhoff">
       <span>Contact</span>
       <p>Send a short note describing your interests, current work, and how you think our research questions might overlap.</p>
     </a>

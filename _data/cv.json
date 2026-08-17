@@ -1,7 +1,8 @@
 {
   "basics": {
     "name": "Joseph Kirchhoff",
-    "email": "josephgkirchhoff@gmail.com",
+    "email": "joseph dot kirchhoff @ utah.edu",
+    "emailDisplay": "joseph dot kirchhoff @ utah.edu",
     "phone": "",
     "website": "https://jgkirchhoff.github.io",
     "summary": "NASA Langley postdoctoral researcher and incoming University of Utah assistant professor working in mechanics, sensing, and computation for advanced composite manufacturing.",
