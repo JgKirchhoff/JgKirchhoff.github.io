@@ -25,6 +25,7 @@ author:
   pronouns         :
   bio              : "Postdoctoral Researcher, NASA Langley<br>Utah ME faculty, Fall 2027"
   email            : "joseph dot kirchhoff @ utah.edu"
+  email_link_label : "Email"
   email_display    : "joseph dot kirchhoff @ utah.edu"
   email_user       : "joseph.kirchhoff"
   email_domain     : "utah.edu"

@@ -90,10 +90,12 @@ hide_title: true
       <span>Collaborators</span>
       <p>I am especially excited about collaborations that connect manufacturing science, aerospace structures, uncertainty quantification, autonomous systems, remote operations, and real process data.</p>
     </div>
-    <a class="home-opportunity home-opportunity--link" href="#" data-email-link data-email-user="{{ site.author.email_user }}" data-email-domain="{{ site.author.email_domain }}" aria-label="Email Joseph Kirchhoff">
+    <div class="home-opportunity home-opportunity--contact">
       <span>Contact</span>
       <p>Send a short note describing your interests, current work, and how you think our research questions might overlap.</p>
-    </a>
+      <a class="home-email-link" href="#" data-email-link data-email-user="{{ site.author.email_user }}" data-email-domain="{{ site.author.email_domain }}" aria-label="Email Joseph Kirchhoff">{{ site.author.email_link_label | default: "Email" }}</a>
+      <p class="home-email-display">{{ site.author.email_display | default: site.author.email }}</p>
+    </div>
   </div>
 </section>
 
